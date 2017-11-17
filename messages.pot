@@ -1,0 +1,134 @@
+# Translations template for PROJECT.
+# Copyright (C) 2017 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2017-10-20 00:25+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.1\n"
+
+#: templates/base.html:38
+msgid "Главная"
+msgstr ""
+
+#: templates/base.html:40
+msgid "О нас"
+msgstr ""
+
+#: templates/base.html:42
+msgid "Компания"
+msgstr ""
+
+#: templates/base.html:43
+msgid "Команда"
+msgstr ""
+
+#: templates/base.html:44
+msgid "Новости"
+msgstr ""
+
+#: templates/base.html:45
+msgid "Партнеры"
+msgstr ""
+
+#: templates/base.html:48
+msgid "Услуги"
+msgstr ""
+
+#: templates/base.html:49
+msgid "Портфолио"
+msgstr ""
+
+#: templates/base.html:50
+msgid "Пресс-центр"
+msgstr ""
+
+#: templates/base.html:51
+msgid "Контакты"
+msgstr ""
+
+#: templates/index.html:33
+msgid "наши услуги"
+msgstr ""
+
+#: templates/index.html:33
+msgid ""
+"Цель создания : Помочь компаниям построить современное казначейство, "
+"эффективно использующее финансовые и людские ресурсы на основе лучших "
+"международных практик"
+msgstr ""
+
+#: templates/index.html:42
+msgid "Построение корпоративного Казначейства"
+msgstr ""
+
+#: templates/index.html:43
+msgid ""
+"Изучение специфики компании и экосистемы, в которой компания работает "
+"(отрасль, география, клиенты, поставщики, законодательство и т.д.)"
+msgstr ""
+
+#: templates/index.html:49
+msgid "Помощь в выстраивании отношений с банками"
+msgstr ""
+
+#: templates/index.html:50
+msgid ""
+"Независимый от банков консалтинг по банковским продуктам - транзакционные"
+" продукты, продукты финансового рынка, хеджирование, кредитные продукты"
+msgstr ""
+
+#: templates/index.html:56
+msgid "Обучение персонала"
+msgstr ""
+
+#: templates/index.html:57
+msgid ""
+"Обучение персонала является безусловно необходимой частью стратегического"
+" планирования и дальнейшего развития компании."
+msgstr ""
+
+#: templates/index.html:69
+msgid "Наша компания"
+msgstr ""
+
+#: templates/index.html:70
+msgid "Просто текст под шаблон и какие-нибудь записи"
+msgstr ""
+
+#: templates/index.html:70
+msgid ""
+"Вторая часть простого текста необходимого для отображения на странице "
+"содержимого"
+msgstr ""
+
+#: templates/index.html:104
+msgid "Цитаты"
+msgstr ""
+
+#: templates/index.html:109 templates/index.html:110 templates/index.html:111
+msgid "Цитата"
+msgstr ""
+
+#: templates/index.html:121
+msgid "Последние новости"
+msgstr ""
+
+#: templates/index.html:144
+msgid "Отзывы"
+msgstr ""
+
+#: templates/index.html:153
+msgid "Технический директор"
+msgstr ""
+

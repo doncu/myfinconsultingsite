@@ -1,0 +1,7 @@
+.idea/
+
+*.pyc
+shop.db
+
+__pycache__
+

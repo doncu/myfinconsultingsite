@@ -1,0 +1,220 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<section id="banner">
+
+	<!-- Slider -->
+        <div id="main-slider" class="flexslider">
+            <ul class="slides">
+              <li>
+                <img src="{{ url_for ('static', filename='img/slides/1.jpg')}}" alt="" />
+                <div class="flex-caption">
+                    <h3>Построение и оптимизация корпоративного казначейства</h3>
+                </div>
+              </li>
+
+              <li>
+                <img src="{{ url_for ('static', filename='img/slides/1.jpg')}}" alt="" />
+                <div class="flex-caption">
+                    <h3>Управление денежными потоками</h3>
+                </div>
+              </li>
+              <li>
+                <img src="{{ url_for ('static', filename='img/slides/1.jpg')}}" alt="" />
+                <div class="flex-caption">
+                    <h3>Управление финансовыми рисками</h3>
+                </div>
+              </li>
+              <li>
+                <img src="{{ url_for ('static', filename='img/slides/1.jpg')}}" alt="" />
+                <div class="flex-caption">
+                    <h3>Управление оборотным капиталом</h3>
+                </div>
+              </li>
+              <li>
+                <img src="{{ url_for ('static', filename='img/slides/1.jpg')}}" alt="" />
+                <div class="flex-caption">
+                    <h3>Помощь в выстраивании отношений с банками</h3>
+                </div>
+              </li>
+              <li>
+                <img src="{{ url_for ('static', filename='img/slides/1.jpg')}}" alt="" />
+                <div class="flex-caption">
+                    <h3>Обучение персонала</h3>
+                </div>
+              </li>
+
+            </ul>
+        </div>
+	<!-- end slider -->
+	</section>
+	<section id="content"> 
+        <div class="container">
+                <div class="row">
+                <div class="col-md-12">
+                    <div class="aligncenter">{{ gettext('МЫ ПОМОГАЕМ КОМПАНИЯМ ПОСТРОИТЬ СОВРЕМЕННОЕ КАЗНАЧЕЙСТВО, Т.Е.
+                        СИСТЕМУ УПРАВЛЕНИЯ ДЕНЕЖНЫМИ ПОТОКАМИ, ФИНАНСОВЫМИ РИСКАМИ И
+                        ОБОРОТНЫМ КАПИТАЛОМ, ЭФФЕКТИВНО ИСПОЛЬЗУЮЩУЮ ФИНАНСОВЫЙ И
+                        ЧЕЛОВЕЧЕСКИЙ КАПИТАЛ, С УЧЕТОМ СПЕЦИФИКИ КОМПАНИИ И НА ОСНОВЕ
+                        ЛУЧШИХ МЕЖДУНАРОДНЫХ И РОССИЙСКИХ ПРАКТИК.') }}
+                        <br>
+                        <br>
+                        <h3>НАПРАВЛЕНИЯ НАШЕЙ РАБОТЫ</h3>
+                    </div>
+                    <br/>
+                </div>
+            </div>
+
+         <div class="row">
+                <div class="col-sm-4 info-blocks">
+                    <i class="icon-info-blocks material-icons">filter_drama</i>
+                    <div class="info-blocks-in">
+                        <h3>{{ gettext('Построение и оптимизация корпоративного казначейства.') }}</h3>
+                        <p>{{ gettext('Изучение
+                            специфики компании, диагностика, разработка индивидуальной модели, план
+                            трансформации и внедрение') }}
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-4 info-blocks">
+                    <i class="icon-info-blocks material-icons">input</i>
+                    <div class="info-blocks-in">
+                        <h3>{{ gettext('Помощь в выстраивании отношений с банками') }}</h3>
+                        <p>{{ gettext('Независимый от банков консалтинг по банковским продуктам - транзакционные
+                            продукты, продукты финансового рынка, хеджирование, кредитные продукты') }}
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-4 info-blocks">
+                    <i class="icon-info-blocks material-icons">power_settings_new</i>
+                    <div class="info-blocks-in">
+                        <h3>{{ gettext('Обучение персонала')}}</h3>
+                        <p>{{ gettext('Тренинги по основным функциям казначейств и
+                            банковским продуктам.') }}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</section>
+	
+	<section class="section-padding gray-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-title text-center">
+						<h3>{{ gettext('НАША КОМАНДА В СОСТОИТ ИЗ ВЫСОКОКОМПЕТЕНТЫХ ПРОФФЕССИОНАЛОВ,
+						    ПРИОБРЕТШИХ УНИКАЛЬНЫЕ ЗНАНИЯ И ОПЫТ ЗА ДЕСЯТКИ ЛЕТ РАБОТЫ В ЛУЧШИХ МЕЖДУНАРОДНЫХ
+						    БАНКАХ МИРА')}}
+                        </h3>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 col-sm-6">
+					<div class="about-text">
+						<p>Как отличить юриста-профессионала от псевдо-юриста? Или на практике и своих ошибках,
+                            или по наличию у него статуса адвоката. В нашей стране - адвокат - это не просто название.
+                            Это подтверждение самой высокой квалификации юриста.
+                            Выбирая нашу компанию, вы доверяете настоящим профессионалам своего дела, людям не знающих
+                            поражений.
+                        </p>
+
+						<ul class="withArrow">
+							<li><span class="fa fa-angle-right"></span> Построение и оптимизация корпоративного казначейства.</li>
+							<li><span class="fa fa-angle-right"></span> Управление денежными потоками</li>
+							<li><span class="fa fa-angle-right"></span> Управление финансовыми рисками</li>
+							<li><span class="fa fa-angle-right"></span> Управление оборотным капиталом</li>
+                            <li><span class="fa fa-angle-right"></span> Помощь в выстраивании отношений с банками</li>
+                            <li><span class="fa fa-angle-right"></span> Обучение персонала</li>
+						</ul>
+						<a href="/services/" class="btn btn-primary waves-effect waves-dark">Подробнее</a>
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-6">
+					<div class="about-image">
+						<img src="{{ url_for ('static', filename='img/about.png')}}" alt="About Images">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>	  
+	
+	
+	<div class="about home-about">
+				<div class="container">
+						
+						<div class="row">
+							<div class="col-md-4">
+								<div class="block-heading-two">
+									<h3><span>{{ gettext('Последние новости') }}</span></h3>
+								</div>		
+								<!-- Accordion starts -->
+							  <ul class="collapsible" id="accordionSection" data-collapsible="accordion">
+								<li>
+								  <div class="collapsible-header active"><i class="material-icons">filter_drama</i>Первая новость</div>
+								  <div class="collapsible-body"><p>Perspiciaatis unde omnis iste natus error Nemo enim ipsam voluptatem quia voluptas sit aspernatur. sit voluptatem accusanti</p></div>
+								</li>
+								<li>
+								  <div class="collapsible-header"><i class="material-icons">place</i>Вторая новость</div>
+								  <div class="collapsible-body"><p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur. Perspiciaatis unde omnis iste natus error sit voluptatem accusanti</p></div>
+								</li>
+								<li>
+								  <div class="collapsible-header"><i class="material-icons">whatshot</i>Третья новость</div>
+								  <div class="collapsible-body"><p>Perspiciaatis Nemo enim ipsam voluptatem quia voluptas sit aspernatur. unde omnis iste natus error sit voluptatem accusanti</p></div>
+								</li>
+							  </ul>
+														 <!-- Accordion ends -->
+								
+							</div>
+
+
+                            <div class="col-md-4">
+								<div class="block-heading-two">
+									<h3><span>{{ gettext('Индикаторы рынков')}}</span></h3>
+								</div>
+								<!-- Accordion starts -->
+							  <ul class="collapsible" id="accordionSection" data-collapsible="accordion">
+								<li>
+								  <div class="collapsible-header active"><i class="material-icons">filter_drama</i>Первый блок</div>
+								  <div class="collapsible-body"><p>Perspiciaatis unde omnis iste natus error Nemo enim ipsam voluptatem quia voluptas sit aspernatur. sit voluptatem accusanti</p></div>
+								</li>
+								<li>
+								  <div class="collapsible-header"><i class="material-icons">place</i>Второй блок</div>
+								  <div class="collapsible-body"><p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur. Perspiciaatis unde omnis iste natus error sit voluptatem accusanti</p></div>
+								</li>
+								<li>
+								  <div class="collapsible-header"><i class="material-icons">whatshot</i>Третий блок</div>
+								  <div class="collapsible-body"><p>Perspiciaatis Nemo enim ipsam voluptatem quia voluptas sit aspernatur. unde omnis iste natus error sit voluptatem accusanti</p></div>
+								</li>
+							  </ul>
+														 <!-- Accordion ends -->
+
+							</div>
+
+							
+							<div class="col-md-4">
+								<div class="block-heading-two">
+									<h3><span>{{ gettext('Отзывы') }}</span></h3>
+								</div>	
+								     <div class="testimonials">
+										<div class="active item">
+										  <blockquote><p>ООО «Я и Яко» выражает благодарность Юридическому центру «MYfinconsulting» за квалифицированное представительство в Арбитражном суде Московского округа.</p></blockquote>
+										  <div class="carousel-info">
+											<img alt="" src="{{ url_for ('static', filename='img/team4.jpg')}}" class="pull-left">
+											<div class="pull-left">
+											  <span class="testimonials-name">Александр Ивлеев</span>
+											  <span class="testimonials-post">{{ gettext('Технический директор') }}</span>
+											</div>
+										  </div>
+										</div>
+									</div>
+							</div>
+						</div>
+						<br>
+                </div>
+
+    </div>
+
+{% endblock %}
+
