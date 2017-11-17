@@ -91,7 +91,6 @@ Image credits: unsplash.com
   width: 100%;
   background-size: cover;
   background-position: center center;
-  background-repeat: no-repeat;
 }
 .fade-carousel .slides .slide-1 {
   background-image: url("/static/img/slides/1.jpg");
@@ -100,6 +99,15 @@ Image credits: unsplash.com
   background-image: url("/static/img/slides/1.jpg");
 }
 .fade-carousel .slides .slide-3 {
+  background-image: url("/static/img/slides/1.jpg");
+}
+.fade-carousel .slides .slide-4 {
+  background-image: url("/static/img/slides/1.jpg");
+}
+.fade-carousel .slides .slide-5 {
+  background-image: url("/static/img/slides/1.jpg");
+}
+.fade-carousel .slides .slide-6 {
   background-image: url("/static/img/slides/1.jpg");
 }
 
