@@ -1411,7 +1411,7 @@ ul.social-network {
 ul.social-network li {
 	display:inline;
 	margin: 0 5px;
-	border: 1px solid #2D2D2D;
+	border: 1px solid #f8f8f8;
 	padding: 5px 0 0;
 	width: 32px;
 	display: inline-block;
@@ -1435,7 +1435,7 @@ ul.social-network li {
 }
 
 #sub-footer span{
-	color: #9e9e9e;
+	color: #f8f8f8;
 }
 
 .copyright {
