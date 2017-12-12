@@ -21,6 +21,7 @@ admin = Admin(
 )
 babel = Babel(app)
 app.add_template_global(const.MENU, 'MENU')
+app.add_template_global(const.YEAR, name='YEAR')
 
 
 @app.teardown_request

@@ -33,7 +33,7 @@ Image credits: unsplash.com
     position: absolute;
     top: 30%;
     left: 50%;
-    z-index: 3;
+    z-index: 999;
     color: #fff;
     text-align: center;
     text-transform: uppercase;
@@ -45,7 +45,15 @@ Image credits: unsplash.com
               transform: translate3d(-50%,-50%,0);
 }
 .hero h1 {
-    font-size: 2em;
+    font-size: 200%;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    color: #FFFFFF;
+}
+
+.hero h2 {
+    font-size: 250%;
     font-weight: 700;
     margin: 0;
     padding: 0;

@@ -1,3 +1,4 @@
+import time
 from flask_babel import lazy_gettext
 import collections
 
@@ -26,3 +27,5 @@ MENU = [
     MenuItem(alias='contacts', name=lazy_gettext('Контакты'), sub=[])
 
 ]
+
+YEAR = time.strftime("%Y")
