@@ -88,9 +88,9 @@ width: 20px;
 .widget {
     color: #f8f8f8;
 }
-.row,.row-fluid {
-	margin-bottom:30px;
-}
+/*.row,.row-fluid {*/
+	/*margin-bottom:30px;*/
+/*}*/
 
 .row .row,.row-fluid .row-fluid{
 	margin-bottom:30px;
@@ -1068,7 +1068,7 @@ display:block;
     text-decoration: none;
     font-weight: 600;
 }
-.box-area{padding: 15px;background: #ffffff;margin-top: -21px;border: 2px solid #f3f3f3;}
+.box-area{padding: 15px;background: #ffffff;margin-top: 5%;border: 2px solid #f3f3f3;}
 .box-area h3{font-size: 17px;font-weight: 600;}
 /* --- Map --- */
 .map{
