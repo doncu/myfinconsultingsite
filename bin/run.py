@@ -32,4 +32,5 @@ if __name__ == '__main__':
 
     from application.app import app
 
-    app.run(debug=args.debug, port=args.port, host=args.host, threaded=True)
+    #app.run(debug=args.debug, port=args.port, host=args.host, threaded=True)
+    app.run(port=args.port, host=args.host, threaded=True)
