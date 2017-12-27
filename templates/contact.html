@@ -25,7 +25,7 @@
                 </div>
             </div>
         </div>
-	<div class="row">
+	<div class="row" style="margin-bottom: 5%">
 
             <div class="col-md-6">
                                         <p> </p>
@@ -33,20 +33,22 @@
                     <form name="sentMessage" id="contactForm" novalidate>
                       <div class="form-group">
                         <label for="">Имя</label>
-                        <input type="text" class="form-control" id="name" placeholder="Имя" required
-                               data-validation-required-message="Пожалуйста укажите ваше имя" >
+                        <input type="text" class="form-control" id="name" placeholder="Имя" >
                       </div>
                       <div class="form-group">
                         <label for="exampleInputEmail1">Email адрес</label>
-                        <input type="email" class="form-control" id="email" placeholder="Email адрес" required
-                               data-validation-required-message="Пожалуйста укажите ваш email адрес">
+                        <input type="email" class="form-control" id="email" placeholder="Email адрес" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Контактный телефон</label>
+                        <input type="tel" class="form-control" id="tel" placeholder="Контактный телефон" required>
                       </div>
                       <div class="form-group">
                         <label for="">Компания</label>
-                        <input type="text" class="form-control" id="name" placeholder="Компания">
+                        <input type="text" class="form-control" id="company" placeholder="Компания" required>
                       </div>
                       <div class="form-group">
-                          <textarea class="form-control" rows="3" placeholder="Текст сообщения" ></textarea>
+                          <textarea class="form-control" rows="3" placeholder="Текст сообщения" required></textarea>
                       </div>
                       <button type="submit" class="btn btn-default">Отправить</button>
                     </form>
