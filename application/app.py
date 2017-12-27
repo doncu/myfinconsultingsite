@@ -32,7 +32,7 @@ def remove_session(*args):
 
 @babel.localeselector
 def get_locale():
-    return request.cookies.get('language', 'en')
+    return request.cookies.get('language', 'ru')
 
 
 
