@@ -6,7 +6,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
-				<h2 class="pageTitle">О нас</h2>
+				<h2 class="pageTitle">{{ gettext('О нас')}}</h2>
 			</div>
 		</div>
 	</div>
@@ -20,14 +20,12 @@
 				</div>
 				<div class="col-md-6 col-sm-6">
 					<div class="about-text">
-						<h2 align="center" style="padding-bottom: 0; margin-top: 0;">Почему <span class="color">мы ?</span></h2>
+						<h2 align="center" style="padding-bottom: 0; margin-top: 0;">{{ gettext('Почему')}} <span class="color">{{ gettext('мы')}} ?</span></h2>
 						<ul>
-                            <li><p style="text-align: justify">- &nbsp; Для нас это не гонка и не борьба за выживание или передел рынка.
-                                Нам интересно делиться опытом, помогать решать задачи и создавать новое. Для нас это творчество.</p></li>
-                            <li><p style="text-align: justify">- &nbsp;&nbsp; У нас уникальные знания и опыт, которые крайне редки на рынке</p></li>
-                            <li><p style="text-align: justify">- &nbsp; Мы решаем задачи в ВАШИХ интересах. Это значит, что мы ставим себя на Ваше место и советуем
-                                только то, что ДЕЙСТВИТЕЛЬНО нужно Вашему бизнесу и принесет пользу именно Вам.</p></li>
-                            <li><p style="text-align: justify">-&nbsp; Мы не будем Вам советовать «инновационные» решения, если они Вам реально не нужны сейчас.</p></li>
+                            <li><p style="text-align: justify">- &nbsp; {{ gettext('Для нас это не гонка и не борьба за выживание или передел рынка. Нам интересно делиться опытом, помогать решать задачи и создавать новое. Для нас это творчество')}}.</p></li>
+                            <li><p style="text-align: justify">- &nbsp;&nbsp; {{ gettext('У нас уникальные знания и опыт, которые крайне редки на рынке')}}</p></li>
+                            <li><p style="text-align: justify">- &nbsp; {{ gettext('Мы решаем задачи в ВАШИХ интересах. Это значит, что мы ставим себя на Ваше место и советуем только то, что ДЕЙСТВИТЕЛЬНО нужно Вашему бизнесу и принесет пользу именно Вам')}}.</p></li>
+                            <li><p style="text-align: justify">-&nbsp; {{ gettext('Мы не будем Вам советовать «инновационные» решения, если они Вам реально не нужны сейчас')}}.</p></li>
                         </ul>
 					</div>
 				</div>
@@ -39,7 +37,7 @@
             <!-- Our Team starts -->
             <!-- Heading -->
             <div class="block-heading-six">
-                <h2 align="center" style="padding-bottom: 0; margin-top: 0;"><span class="color">Н</span>аша команда</h2>
+                <h2 align="center" style="padding-bottom: 0; margin-top: 0;"><span class="color">Н</span>{{ gettext('аша команда')}}</h2>
             </div>
             <br>
             <!-- Our team starts -->
@@ -51,15 +49,15 @@
                             <!-- Image -->
                             <img style="margin: auto;" class="img-responsive" src="{{ url_for ('static', filename='img/team2.png')}}" alt="">
                             <!-- Name -->
-                            <h4>Юрий Авраменко</h4>
-                            <span class="deg">к.э.н.</span>
+                            <h4>{{ gettext('Юрий Авраменко')}}</h4>
+                            <span class="deg">{{ gettext('к.э.н.')}}</span>
                             <div class="about-text">
-                                <p style="text-align: justify">- Специализация: транзакционные продукты, консалтинг по построению
+                                <p style="text-align: justify">- {{ gettext('Специализация: транзакционные продукты, консалтинг по построению
                                 казначейств, фабрик платежей и единых центров обслуживания,
-                                управление рисками</p>
-                                <p style="text-align: justify">- &nbsp;&nbsp; 24 года в ведущих международных банках: Ситибанк, АБН АМРО, ММБ (теперь Юникредит)</p>
-                                <p style="text-align: left">- &nbsp;&nbsp; руководство международным кластером (8 стран) и многонациональными командами</p>
-                                <p style="text-align: justify">- &nbsp;&nbsp; работа с ведущими российскими и международными компаниями</p>
+                                управление рисками')}}</p>
+                                <p style="text-align: justify">- &nbsp;&nbsp; {{ gettext('24 года в ведущих международных банках: Ситибанк, АБН АМРО, ММБ (теперь Юникредит)')}}</p>
+                                <p style="text-align: left">- &nbsp;&nbsp; {{ gettext('руководство международным кластером (8 стран) и многонациональными командами')}}</p>
+                                <p style="text-align: justify">- &nbsp;&nbsp; {{ gettext('работа с ведущими российскими и международными компаниями')}}</p>
                             </div>
                         </div>
                     </div>
@@ -69,13 +67,12 @@
                             <!-- Image -->
                             <img style="margin: auto;" class="img-responsive" src="{{ url_for ('static', filename='img/team1.png')}}" alt="">
                             <!-- Name -->
-                            <h4 style="margin-bottom: 2%">Марина Завгородняя</h4>
+                            <h4 style="margin-bottom: 2%">{{ gettext('Марина Завгородняя')}}</h4>
                             <div class="about-text" style="margin-bottom: 5%">
-                                <p style="text-align: justify">- Специализация: продукты финансового рынка, управление финансовыми рисками,
-                                    кредитование с иcпользованием акций и др. ценных бумаг</p>
-                                <p style="text-align: justify">- &nbsp; 24 года в ведущих международных банках: Ситибанк, ИНГ Банк, ММБ (теперь Юникредит)</p>
-                                <p style="text-align: justify">- &nbsp; руководство департаментами маркетинга и продаж финансовых инструментов</p>
-                                <p style="text-align: justify">- &nbsp;&nbsp; работа с ведущими российскими и международными компаниями </p>
+                                <p style="text-align: justify">- {{ gettext('Специализация: продукты финансового рынка, управление финансовыми рисками, кредитование с иcпользованием акций и др. ценных бумаг')}}</p>
+                                <p style="text-align: justify">- &nbsp; {{ gettext('24 года в ведущих международных банках: Ситибанк, ИНГ Банк, ММБ (теперь Юникредит)')}}</p>
+                                <p style="text-align: justify">- &nbsp; {{ gettext('руководство департаментами маркетинга и продаж финансовых инструментов')}}</p>
+                                <p style="text-align: justify">- &nbsp;&nbsp; {{ gettext('работа с ведущими российскими и международными компаниями')}} </p>
                             </div>
                         </div>
                     </div>

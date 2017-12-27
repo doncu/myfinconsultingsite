@@ -6,7 +6,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
-				<h2 class="pageTitle">Услуги</h2>
+				<h2 class="pageTitle">{{ gettext('Услуги')}}</h2>
 			</div>
 		</div>
 	</div>
@@ -18,11 +18,8 @@
             <div class="row" style="margin-bottom: 0">
                 <div class="col-md-12">
                     <div class="about-logo">
-                        <h3 style="text-align: center">Наши<span class="color"> услуги</span></h3>
-                        <p style="font-size: 16px; text-align: justify">Мы помогаем компаниям построить современное казначейство, т.е.  систему
-                            управления денежными потоками, финансовыми рисками и оборотным капиталом,
-                            эфективно использующую финансовый и человеческий капитал, с учётом специфики
-                            компании и на основе лучших международных и российских практик.</p>
+                        <h3 style="text-align: center">{{ gettext('Наши')}}<span class="color"> {{ gettext('услуги')}}</span></h3>
+                        <p style="font-size: 16px; text-align: justify">{{ gettext('Мы помогаем компаниям построить современное казначейство, т.е.  систему управления денежными потоками, финансовыми рисками и оборотным капиталом, эфективно использующую финансовый и человеческий капитал, с учётом специфики компании и на основе лучших международных и российских практик')}}.</p>
                     </div>
                 </div>
             </div>
@@ -36,58 +33,53 @@
                                 <i class="icon-info-blocks material-icons" style="font-size: 40px">account_balance</i>
                             </span>
 {#                            <div class="box-area" style="margin-left: 0; margin-right: 0">#}
-                                <h3 style="font-size: 180%">Построение/оптимизация системы управления денежными
-                                    потоками, финансовыми рисками и оборотным капиталом
+                                <h3 style="font-size: 180%">{{ gettext('Построение/оптимизация системы управления денежными потоками, финансовыми рисками и оборотным капиталом')}}
                                 </h3>
                                 <div class="row">
                                     <div class="skill-home-solid clearfix">
                                         <div class="col-md-4">
                                             <div class="box-area" style="border: solid 1px #1891EC; text-align: justify">
-                                                <h4><b>Изучение специфики компании</b></h4>
+                                                <h4><b>{{ gettext('Изучение специфики компании')}}</b></h4>
                                                 <ul style="display: block; list-style-type: disc; -webkit-margin-before: 1em; -webkit-margin-after: 1em; -webkit-margin-start: 0; -webkit-margin-end: 0; -webkit-padding-start: 8%;">
-                                                    <li style="list-style-type: disc">ЭКОСИСТЕМА (отрасль, география, клиенты, поставщики,
-                                                        законодательство ит.п.)
+                                                    <li style="list-style-type: disc">{{ gettext('ЭКОСИСТЕМА (отрасль, география, клиенты, поставщики, законодательство ит.п.)')}}
                                                     </li>
                                                     <li style="list-style-type: disc">
-                                                        БИЗНЕС-АРХИТЕКТУРА (производственная модель, торговая модель,
-                                                        модель казначейства и модель управления оборотным капиталом и др.)
+                                                        {{ gettext('БИЗНЕС-АРХИТЕКТУРА (производственная модель, торговая модель, модель казначейства и модель управления оборотным капиталом и др.)')}}
                                                     </li>
                                                     <li style="list-style-type: disc">
-                                                        КОРПОРАТИВНОЕ УПРАВЛЕНИЕ: распределение функций и ответственности
-                                                        внутри компании (стратегия, политики, ключевые показатели
-                                                        эффективности, организационная структура, процедуры, система контроля)
+                                                        {{ gettext('КОРПОРАТИВНОЕ УПРАВЛЕНИЕ: распределение функций и ответственности внутри компании (стратегия, политики, ключевые показатели эффективности, организационная структура, процедуры, система контроля)')}}
                                                     </li>
                                                 </ul>
                                             </div>
                                         </div>
                                         <div class="col-md-4">
                                             <div class="box-area" style="border: solid 1px #1891EC; text-align: justify">
-                                                <h5 style="line-height: 1.5"><b>ДИАГНОСТИКА СИСТЕМЫ УПРАВЛЕНИЯ ДЕНЕЖНЫМИ ПОТОКАМИ И ЛИКВИДНОСТЬЮ</b></h5>
+                                                <h5 style="line-height: 1.5"><b>{{ gettext('ДИАГНОСТИКА СИСТЕМЫ УПРАВЛЕНИЯ ДЕНЕЖНЫМИ ПОТОКАМИ И ЛИКВИДНОСТЬЮ')}}</b></h5>
                                                 <ul style="display: block; list-style-type: disc; -webkit-margin-before: 1em; -webkit-margin-after: 1em; -webkit-margin-start: 0; -webkit-margin-end: 0; -webkit-padding-start: 8%; margin-bottom: 11%">
-                                                    <li style="list-style-type: disc">классификация денежных потоков</li>
-                                                    <li style="list-style-type: disc">риск ликвидности</li>
-                                                    <li style="list-style-type: disc">дочерние компании</li>
-                                                    <li style="list-style-type: disc">денежная позиция</li>
-                                                    <li style="list-style-type: disc">платежи</li>
-                                                    <li style="list-style-type: disc">прогнозирование</li>
-                                                    <li style="list-style-type: disc">концентрация</li>
-                                                    <li style="list-style-type: disc">физический и виртуальный пулинг</li>
-                                                    <li style="list-style-type: disc">инвестирование</li>
-                                                    <li style="list-style-type: disc">неттинг</li>
-                                                    <li style="list-style-type: disc">внутренний банк</li>
+                                                    <li style="list-style-type: disc">{{ gettext('классификация денежных потоков')}}</li>
+                                                    <li style="list-style-type: disc">{{ gettext('риск ликвидности')}}</li>
+                                                    <li style="list-style-type: disc">{{ gettext('дочерние компании')}}</li>
+                                                    <li style="list-style-type: disc">{{ gettext('денежная позиция')}}</li>
+                                                    <li style="list-style-type: disc">{{ gettext('платежи')}}</li>
+                                                    <li style="list-style-type: disc">{{ gettext('прогнозирование')}}</li>
+                                                    <li style="list-style-type: disc">{{ gettext('концентрация')}}</li>
+                                                    <li style="list-style-type: disc">{{ gettext('физический и виртуальный пулинг')}}</li>
+                                                    <li style="list-style-type: disc">{{ gettext('инвестирование')}}</li>
+                                                    <li style="list-style-type: disc">{{ gettext('неттинг')}}</li>
+                                                    <li style="list-style-type: disc">{{ gettext('внутренний банк')}}</li>
                                                 </ul>
                                             </div>
                                         </div>
                                         <div class="col-md-4">
                                             <div class="box-area" style="border: solid 1px #1891EC; text-align: justify">
-                                                <h5><b>ДИАГНОСТИКА СИСТЕМЫ УПРАВЛЕНИЯ ОБОРОТНЫМ КАПИТАЛОМ</b></h5>
+                                                <h5><b>{{ gettext('ДИАГНОСТИКА СИСТЕМЫ УПРАВЛЕНИЯ ОБОРОТНЫМ КАПИТАЛОМ')}}</b></h5>
                                                 <ul style="display: block; list-style-type: disc; -webkit-margin-before: 1em; -webkit-margin-after: 1em; -webkit-margin-start: 0; -webkit-margin-end: 0; -webkit-padding-start: 8%; margin-bottom: 35%">
-                                                    <li style="list-style-type: disc">финансовый, циклический и операционный аспекты</li>
-                                                    <li style="list-style-type: disc">методы измерения</li>
-                                                    <li style="list-style-type: disc">связь с ликвидностью</li>
-                                                    <li style="list-style-type: disc">кредиторская и дебиторская задолженность</li>
-                                                    <li style="list-style-type: disc">платежи</li>
-                                                    <li style="list-style-type: disc">фабрики платежей и общие центры обслуживания</li>
+                                                    <li style="list-style-type: disc">{{ gettext('финансовый, циклический и операционный аспекты')}}</li>
+                                                    <li style="list-style-type: disc">{{ gettext('методы измерения')}}</li>
+                                                    <li style="list-style-type: disc">{{ gettext('связь с ликвидностью')}}</li>
+                                                    <li style="list-style-type: disc">{{ gettext('кредиторская и дебиторская задолженность')}}</li>
+                                                    <li style="list-style-type: disc">{{ gettext('платежи')}}</li>
+                                                    <li style="list-style-type: disc">{{ gettext('фабрики платежей и общие центры обслуживания')}}</li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -98,44 +90,42 @@
                                     <div class="skill-home-solid clearfix">
                                         <div class="col-md-4">
                                             <div class="box-area" style="border: solid 1px #1891EC; text-align: justify">
-                                                <h5><b>ДИАГНОСТИКА СИСТЕМЫ УПРАВЛЕНИЯ ФИНАНСОВЫМИ РИСКАМИ</b></h5>
+                                                <h5><b>{{ gettext('ДИАГНОСТИКА СИСТЕМЫ УПРАВЛЕНИЯ ФИНАНСОВЫМИ РИСКАМИ')}}</b></h5>
                                                 <ul style="display: block; list-style-type: disc; -webkit-margin-before: 1em; -webkit-margin-after: 1em; -webkit-margin-start: 0; -webkit-margin-end: 0; -webkit-padding-start: 8%;">
-                                                    <li style="list-style-type: disc">виды рисков - риск ликвидности, риск банка-контрагента, процентный,
-                                                        валютный, товарный, риск поставщика, риск покупателя,
-                                                        операционный риск и др.
+                                                    <li style="list-style-type: disc">{{ gettext('виды рисков - риск ликвидности, риск банка-контрагента, процентный, валютный, товарный, риск поставщика, риск покупателя, операционный риск и др.')}}
                                                     </li>
                                                     <li style="list-style-type: disc">
-                                                        лимиты
+                                                        {{ gettext('лимиты')}}
                                                     </li>
                                                     <li style="list-style-type: disc">
-                                                        мониторинг
+                                                        {{ gettext('мониторинг')}}
                                                     </li>
-                                                    <li style="list-style-type: disc">моделирование и сценарный анализ</li>
-                                                    <li style="list-style-type: disc">инструменты управления рисками</li>
-                                                    <li style="list-style-type: disc">хеджирование</li>
-                                                    <li style="list-style-type: disc">заключение сделок</li>
-                                                    <li style="list-style-type: disc">валютная переоценка</li>
+                                                    <li style="list-style-type: disc">{{ gettext('моделирование и сценарный анализ')}}</li>
+                                                    <li style="list-style-type: disc">{{ gettext('инструменты управления рисками')}}</li>
+                                                    <li style="list-style-type: disc">{{ gettext('хеджирование')}}</li>
+                                                    <li style="list-style-type: disc">{{ gettext('заключение сделок')}}</li>
+                                                    <li style="list-style-type: disc">{{ gettext('валютная переоценка')}}</li>
                                                 </ul>
                                             </div>
                                         </div>
                                         <div class="col-md-4">
                                             <div class="box-area" style="border: solid 1px #1891EC; text-align: justify">
-                                                <h5><b>ДИАГНОСТИКА ТЕХНОЛОГИЧЕСКОЙ ИНФРАСТРУКТУРЫ</b></h5>
+                                                <h5><b>{{ gettext('ДИАГНОСТИКА ТЕХНОЛОГИЧЕСКОЙ ИНФРАСТРУКТУРЫ')}}</b></h5>
                                                 <ul style="display: block; list-style-type: disc; -webkit-margin-before: 1em; -webkit-margin-after: 1em; -webkit-margin-start: 0; -webkit-margin-end: 0; -webkit-padding-start: 8%; margin-bottom: 25%">
-                                                    <li style="list-style-type: disc">казначейская система</li>
-                                                    <li style="list-style-type: disc">система управления ресурсами предприятия/бухгалтерская система</li>
-                                                    <li style="list-style-type: disc">облачные решения</li>
-                                                    <li style="list-style-type: disc">системы распределенного реестра (блокчейн)</li>
-                                                    <li style="list-style-type: disc">каналы связи с банками</li>
-                                                    <li style="list-style-type: disc">торговые системы</li>
-                                                    <li style="list-style-type: disc">информационные системы</li>
+                                                    <li style="list-style-type: disc">{{ gettext('казначейская система')}}</li>
+                                                    <li style="list-style-type: disc">{{ gettext('система управления ресурсами предприятия/бухгалтерская система')}}</li>
+                                                    <li style="list-style-type: disc">{{ gettext('облачные решения')}}</li>
+                                                    <li style="list-style-type: disc">{{ gettext('системы распределенного реестра (блокчейн)')}}</li>
+                                                    <li style="list-style-type: disc">{{ gettext('каналы связи с банками')}}</li>
+                                                    <li style="list-style-type: disc">{{ gettext('торговые системы')}}</li>
+                                                    <li style="list-style-type: disc">{{ gettext('информационные системы')}}</li>
                                                 </ul>
                                             </div>
                                         </div>
                                         <div class="col-md-4">
                                             <div class="box-area" style="border: solid 1px #1891EC">
-                                                <h5><b>СРАВНЕНИЕ С ЭТАЛОНОМ</b></h5>
-                                                <p style="margin-bottom: 85%">(передовыми практиками)</p>
+                                                <h5><b>{{ gettext('СРАВНЕНИЕ С ЭТАЛОНОМ')}}</b></h5>
+                                                <p style="margin-bottom: 85%">({{ gettext('передовыми практиками')}})</p>
                                             </div>
                                         </div>
                                     </div>
@@ -145,21 +135,22 @@
                                     <div class="skill-home-solid clearfix">
                                         <div class="col-md-4">
                                             <div class="box-area" style="border: solid 1px #1891EC">
-                                                <h5 style="line-height: 1.5; margin-bottom: 2%"><b>РАЗРАБОТКА индивидуальной концептуальной целевой МОДЕЛИ системы</b>
-                                                    или отдельных блоков управления денежными потоками, финансовыми
-                                                    рисками и оборотным капиталом с учетом специфики компании
+                                                <h5 style="line-height: 1.5; margin-bottom: 2%">
+                                                    <b>РАЗРАБОТКА</b> индивидуальной концептуальной целевой
+                                                    <b>МОДЕЛИ</b> системы или отдельных блоков управления денежными потоками,
+                                                    финансовыми рисками и оборотным капиталом с учетом специфики компании</b>
                                                 </h5>
                                             </div>
                                         </div>
                                         <div class="col-md-4">
                                             <div class="box-area" style="border: solid 1px #1891EC">
-                                                <h5><b>ПЛАН ТРАНСФОРМАЦИИ</b></h5>
-                                                <p style="margin-bottom: 23%">системы в целом или её отдельных блоков</p>
+                                                <h5><b>{{ gettext('ПЛАН ТРАНСФОРМАЦИИ')}}</b></h5>
+                                                <p style="margin-bottom: 23%">{{ gettext('системы в целом или её отдельных блоков')}}</p>
                                             </div>
                                         </div>
                                         <div class="col-md-4">
                                             <div class="box-area" style="border: solid 1px #1891EC">
-                                                <h5 style="text-align: justify; margin-bottom: 26%"><b>РАЗРАБОТКА внутренних регламентных ДОКУМЕНТОВ а так же СОПРОВОЖДЕНИЕ ВНЕДРЕНИЯ</b></h5>
+                                                <h5 style="text-align: justify; margin-bottom: 26%"><b>РАЗРАБОТКА</b> внутренних регламентных <b>ДОКУМЕНТОВ</b>, а так же <b>СОПРОВОЖДЕНИЕ ВНЕДРЕНИЯ</b></h5>
                                             </div>
                                         </div>
                                     </div>
@@ -177,25 +168,24 @@
                         <span class="icons c3" style="border: solid 2px #1891EC">
                             <i class="icon-info-blocks material-icons" style="font-size: 40px">domain</i>
                         </span>
-                        <h3 style="font-size: 180%">Банковские продукты</h3>
-                        <h4 style="text-align: justify">Независимый от банков консалтинг по банковским продуктам - транзакционные продукты, продукты
-                            финансового рынка, хеджирование, кредитные продукты
+                        <h3 style="font-size: 180%">{{ gettext('Банковские продукты')}}</h3>
+                        <h4 style="text-align: justify">{{ gettext('Независимый от банков консалтинг по банковским продуктам - транзакционные продукты, продукты финансового рынка, хеджирование, кредитные продукты')}}
                         </h4>
                         <div class="row">
                             <div class="skill-home-solid clearfix">
                                 <div class="col-md-4">
                                     <div class="box-area" style="border: solid 1px #1891EC">
-                                        <h5><b>Соответствие продукта потребностям компании</b></h5>
+                                        <h5><b>{{ gettext('Соответствие продукта потребностям компании')}}</b></h5>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="box-area" style="border: solid 1px #1891EC">
-                                        <h5 style="margin-bottom: 11%"><b>Структура и параметры продукта</b></h5>
+                                        <h5 style="margin-bottom: 11%"><b>{{ gettext('Структура и параметры продукта')}}</b></h5>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="box-area" style="border: solid 1px #1891EC">
-                                        <h5 style="margin-bottom: 11%"><b>Ценовые условия</b></h5>
+                                        <h5 style="margin-bottom: 11%"><b>{{ gettext('Ценовые условия')}}</b></h5>
                                     </div>
                                 </div>
                             </div>
@@ -210,23 +200,23 @@
                     <span class="icons c2" style="border: solid 2px #1891EC">
                         <i class="icon-info-blocks material-icons" style="font-size: 40px">speaker_notes</i>
                     </span>
-                    <h3 style="font-size: 180%">Обучение персонала</h3>
-                        <h3>Проведение профессиональных тренингов по темам :</h3>
+                    <h3 style="font-size: 180%">{{ gettext('Обучение персонала')}}</h3>
+                        <h3>{{ gettext('Проведение профессиональных тренингов по темам')}}:</h3>
                             <div class="row">
                                 <div class="skill-home-solid clearfix">
                                     <div class="col-md-4">
                                         <div class="box-area" style="border: solid 1px #1891EC">
-                                            <h5><b>Управление денежными потоками и ликвидностью</b></h5>
+                                            <h5><b>{{ gettext('Управление денежными потоками и ликвидностью')}}</b></h5>
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="box-area" style="border: solid 1px #1891EC">
-                                            <h5 style="margin-bottom: 11%"><b>Управление оборотным капиталом</b></h5>
+                                            <h5 style="margin-bottom: 11%"><b>{{ gettext('Управление оборотным капиталом')}}</b></h5>
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="box-area" style="border: solid 1px #1891EC">
-                                            <h5 style="margin-bottom: 11%"><b>Физический и виртуальный пулинг</b></h5>
+                                            <h5 style="margin-bottom: 11%"><b>{{ gettext('Физический и виртуальный пулинг')}}</b></h5>
                                         </div>
                                     </div>
                                 </div>
@@ -236,17 +226,17 @@
                                 <div class="skill-home-solid clearfix">
                                     <div class="col-md-4">
                                         <div class="box-area" style="border: solid 1px #1891EC">
-                                            <h5><b>Транзакционные банковские продукты</b></h5>
+                                            <h5><b>{{ gettext('Транзакционные банковские продукты')}}</b></h5>
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="box-area" style="border: solid 1px #1891EC">
-                                            <h5><b>Продукты финансового рынка</b></h5>
+                                            <h5><b>{{ gettext('Продукты финансового рынка')}}</b></h5>
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="box-area" style="border: solid 1px #1891EC">
-                                            <h5><b>Хеджирование</b></h5>
+                                            <h5><b>{{ gettext('Хеджирование')}}</b></h5>
                                         </div>
                                     </div>
                                 </div>

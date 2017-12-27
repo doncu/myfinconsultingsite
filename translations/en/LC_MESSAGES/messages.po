@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-10-20 00:25+0300\n"
-"PO-Revision-Date: 2017-10-20 00:10+0300\n"
+"POT-Creation-Date: 2017-12-27 23:14+0300\n"
+"PO-Revision-Date: 2017-12-27 23:15+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
 "Language-Team: en <LL@li.org>\n"
@@ -18,118 +18,520 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.5.1\n"
 
-#: templates/base.html:38
+#: application/const.py:23 templates/base.html:90
 msgid "Главная"
-msgstr "General"
+msgstr "Major"
 
-#: templates/base.html:40
+#: application/const.py:24 templates/about.html:9 templates/base.html:91
 msgid "О нас"
 msgstr "About us"
 
-#: templates/base.html:42
-msgid "Компания"
-msgstr "The company"
-
-#: templates/base.html:43
-msgid "Команда"
-msgstr "The command"
-
-#: templates/base.html:44
-msgid "Новости"
-msgstr "The news"
-
-#: templates/base.html:45
-msgid "Партнеры"
-msgstr "The partners"
-
-#: templates/base.html:48
+#: application/const.py:25 templates/base.html:92 templates/services.html:9
 msgid "Услуги"
-msgstr "The Services"
+msgstr "Services"
 
-#: templates/base.html:49
-msgid "Портфолио"
-msgstr "The portfolio"
-
-#: templates/base.html:50
-msgid "Пресс-центр"
-msgstr "Press - centre"
-
-#: templates/base.html:51
+#: application/const.py:27 templates/base.html:93 templates/contact.html:9
 msgid "Контакты"
 msgstr "Contacts"
 
-#: templates/index.html:33
-msgid "наши услуги"
-msgstr "Our services"
+#: templates/about.html:23
+msgid "Почему"
+msgstr "Why"
 
-#: templates/index.html:33
+#: templates/about.html:23
+msgid "мы"
+msgstr "we"
+
+#: templates/about.html:25
 msgid ""
-"Цель создания : Помочь компаниям построить современное казначейство, "
-"эффективно использующее финансовые и людские ресурсы на основе лучших "
-"международных практик"
-msgstr "Bla bla bla bla"
+"Для нас это не гонка и не борьба за выживание или передел рынка. Нам "
+"интересно делиться опытом, помогать решать задачи и создавать новое. Для "
+"нас это творчество"
+msgstr ""
+"For us, this is not a race or a struggle for survival or redistribution of the market. Us"
+"it is interesting to share experiences, help solve problems and create new ones. For"
+"us this creativity"
 
-#: templates/index.html:42
-msgid "Построение корпоративного Казначейства"
-msgstr "The creating corp moneys"
+#: templates/about.html:26
+msgid "У нас уникальные знания и опыт, которые крайне редки на рынке"
+msgstr ""
 
-#: templates/index.html:43
+#: templates/about.html:27
 msgid ""
-"Изучение специфики компании и экосистемы, в которой компания работает "
-"(отрасль, география, клиенты, поставщики, законодательство и т.д.)"
-msgstr "Simple simple other text"
+"Мы решаем задачи в ВАШИХ интересах. Это значит, что мы ставим себя на "
+"Ваше место и советуем только то, что ДЕЙСТВИТЕЛЬНО нужно Вашему бизнесу и"
+" принесет пользу именно Вам"
+msgstr ""
 
-#: templates/index.html:49
-msgid "Помощь в выстраивании отношений с банками"
-msgstr "Help in creations with banks"
+#: templates/about.html:28
+msgid ""
+"Мы не будем Вам советовать «инновационные» решения, если они Вам реально "
+"не нужны сейчас"
+msgstr ""
 
-#: templates/index.html:50
+#: templates/about.html:40
+msgid "аша команда"
+msgstr ""
+
+#: templates/about.html:52
+msgid "Юрий Авраменко"
+msgstr ""
+
+#: templates/about.html:53
+msgid "к.э.н."
+msgstr ""
+
+#: templates/about.html:55
+msgid ""
+"Специализация: транзакционные продукты, консалтинг по построению\n"
+"                                казначейств, фабрик платежей и единых "
+"центров обслуживания,\n"
+"                                управление рисками"
+msgstr ""
+
+#: templates/about.html:58
+msgid ""
+"24 года в ведущих международных банках: Ситибанк, АБН АМРО, ММБ (теперь "
+"Юникредит)"
+msgstr ""
+
+#: templates/about.html:59
+msgid ""
+"руководство международным кластером (8 стран) и многонациональными "
+"командами"
+msgstr ""
+
+#: templates/about.html:60 templates/about.html:75
+msgid "работа с ведущими российскими и международными компаниями"
+msgstr ""
+
+#: templates/about.html:70
+msgid "Марина Завгородняя"
+msgstr ""
+
+#: templates/about.html:72
+msgid ""
+"Специализация: продукты финансового рынка, управление финансовыми "
+"рисками, кредитование с иcпользованием акций и др. ценных бумаг"
+msgstr ""
+
+#: templates/about.html:73
+msgid ""
+"24 года в ведущих международных банках: Ситибанк, ИНГ Банк, ММБ (теперь "
+"Юникредит)"
+msgstr ""
+
+#: templates/about.html:74
+msgid "руководство департаментами маркетинга и продаж финансовых инструментов"
+msgstr ""
+
+#: templates/base.html:76
+msgid "Наши контакты"
+msgstr ""
+
+#: templates/base.html:88
+msgid "Быстрые ссылки"
+msgstr ""
+
+#: templates/base.html:99 templates/index.html:161
+msgid "Последние новости"
+msgstr ""
+
+#: templates/contact.html:21
+msgid "Будем рады оказать Вам"
+msgstr ""
+
+#: templates/contact.html:21
+msgid "помощь"
+msgstr ""
+
+#: templates/contact.html:23
+msgid ""
+"Вы можете связаться с нами по указанным ниже телефонам, электронной почте"
+" или заполнив форму обратной связи"
+msgstr ""
+
+#: templates/contact.html:35
+msgid "Имя"
+msgstr ""
+
+#: templates/contact.html:39
+msgid "Email адрес"
+msgstr ""
+
+#: templates/contact.html:43
+msgid "Контактный телефон"
+msgstr ""
+
+#: templates/contact.html:47
+msgid "Компания"
+msgstr ""
+
+#: templates/contact.html:53
+msgid "Отправить"
+msgstr ""
+
+#: templates/index.html:25
+msgid "Построение и оптимизация корпоративного казначейства"
+msgstr ""
+
+#: templates/index.html:33
+msgid "Управление денежными потоками"
+msgstr ""
+
+#: templates/index.html:41
+msgid "Управление финансовыми рисками"
+msgstr ""
+
+#: templates/index.html:49 templates/services.html:212
+msgid "Управление оборотным капиталом"
+msgstr ""
+
+#: templates/index.html:57 templates/index.html:107 templates/services.html:169
+msgid "Банковские продукты"
+msgstr ""
+
+#: templates/index.html:65 templates/index.html:116 templates/services.html:201
+msgid "Обучение персонала"
+msgstr ""
+
+#: templates/index.html:80
+msgid ""
+"МЫ ПОМОГАЕМ КОМПАНИЯМ ПОСТРОИТЬ СОВРЕМЕННОЕ КАЗНАЧЕЙСТВО, Т.Е.\n"
+"                        СИСТЕМУ УПРАВЛЕНИЯ ДЕНЕЖНЫМИ ПОТОКАМИ, "
+"ФИНАНСОВЫМИ РИСКАМИ И\n"
+"                        ОБОРОТНЫМ КАПИТАЛОМ, ЭФФЕКТИВНО ИСПОЛЬЗУЮЩУЮ "
+"ФИНАНСОВЫЙ И\n"
+"                        ЧЕЛОВЕЧЕСКИЙ КАПИТАЛ, С УЧЕТОМ СПЕЦИФИКИ КОМПАНИИ"
+" И НА ОСНОВЕ\n"
+"                        ЛУЧШИХ МЕЖДУНАРОДНЫХ И РОССИЙСКИХ ПРАКТИК."
+msgstr ""
+
+#: templates/index.html:87
+msgid "НАПРАВЛЕНИЯ НАШЕЙ РАБОТЫ"
+msgstr ""
+
+#: templates/index.html:97 templates/services.html:36
+msgid ""
+"Построение/оптимизация системы управления денежными потоками, финансовыми"
+" рисками и оборотным капиталом"
+msgstr ""
+
+#: templates/index.html:98
+msgid ""
+"Изучение\n"
+"                            специфики компании, диагностика, разработка "
+"индивидуальной модели, план\n"
+"                            трансформации и внедрение"
+msgstr ""
+
+#: templates/index.html:108
+msgid ""
+"Независимый от банков консалтинг по банковским продуктам - транзакционные"
+"\n"
+"                            продукты, продукты финансового рынка, "
+"хеджирование, кредитные продукты"
+msgstr ""
+
+#: templates/index.html:117
+msgid ""
+"Тренинги по основным функциям казначейств и\n"
+"                            банковским продуктам"
+msgstr ""
+
+#: templates/index.html:123
+msgid "Наши услуги"
+msgstr ""
+
+#: templates/index.html:132
+msgid ""
+"Наша команда состоит из высококомпететных профессионалов,\n"
+"\t\t\t\t\t\t    приобретших уникальные знания и опыт за десятки лет "
+"работы в ведущих международных\n"
+"\t\t\t\t\t\t    банках мира"
+msgstr ""
+
+#: templates/index.html:151
+msgid "Наша команда"
+msgstr ""
+
+#: templates/index.html:184
+msgid "Индикаторы рынков"
+msgstr ""
+
+#: templates/index.html:206
+msgid "Отзыв"
+msgstr ""
+
+#: templates/index.html:211
+msgid ""
+"От имени Ассоциации корпоративных казначеев я хотел бы поблагодарить Вас "
+"за успешное проведение семинара на тему «Управление денежными потоками и "
+"ликвидностью» для казначейств компаний, входящих в ГК «Ростех»"
+msgstr ""
+
+#: templates/index.html:217
+msgid "Владимир Козинец"
+msgstr ""
+
+#: templates/index.html:218
+msgid "Президент"
+msgstr ""
+
+#: templates/index.html:219
+msgid "Ассоциации корпоративных казначеев"
+msgstr ""
+
+#: templates/services.html:21
+msgid "Наши"
+msgstr ""
+
+#: templates/services.html:21
+msgid "услуги"
+msgstr ""
+
+#: templates/services.html:22
+msgid ""
+"Мы помогаем компаниям построить современное казначейство, т.е.  систему "
+"управления денежными потоками, финансовыми рисками и оборотным капиталом,"
+" эфективно использующую финансовый и человеческий капитал, с учётом "
+"специфики компании и на основе лучших международных и российских практик"
+msgstr ""
+
+#: templates/services.html:42
+msgid "Изучение специфики компании"
+msgstr ""
+
+#: templates/services.html:44
+msgid ""
+"ЭКОСИСТЕМА (отрасль, география, клиенты, поставщики, законодательство "
+"ит.п.)"
+msgstr ""
+
+#: templates/services.html:47
+msgid ""
+"БИЗНЕС-АРХИТЕКТУРА (производственная модель, торговая модель, модель "
+"казначейства и модель управления оборотным капиталом и др.)"
+msgstr ""
+
+#: templates/services.html:50
+msgid ""
+"КОРПОРАТИВНОЕ УПРАВЛЕНИЕ: распределение функций и ответственности внутри "
+"компании (стратегия, политики, ключевые показатели эффективности, "
+"организационная структура, процедуры, система контроля)"
+msgstr ""
+
+#: templates/services.html:57
+msgid "ДИАГНОСТИКА СИСТЕМЫ УПРАВЛЕНИЯ ДЕНЕЖНЫМИ ПОТОКАМИ И ЛИКВИДНОСТЬЮ"
+msgstr ""
+
+#: templates/services.html:59
+msgid "классификация денежных потоков"
+msgstr ""
+
+#: templates/services.html:60
+msgid "риск ликвидности"
+msgstr ""
+
+#: templates/services.html:61
+msgid "дочерние компании"
+msgstr ""
+
+#: templates/services.html:62
+msgid "денежная позиция"
+msgstr ""
+
+#: templates/services.html:63 templates/services.html:81
+msgid "платежи"
+msgstr ""
+
+#: templates/services.html:64
+msgid "прогнозирование"
+msgstr ""
+
+#: templates/services.html:65
+msgid "концентрация"
+msgstr ""
+
+#: templates/services.html:66
+msgid "физический и виртуальный пулинг"
+msgstr ""
+
+#: templates/services.html:67
+msgid "инвестирование"
+msgstr ""
+
+#: templates/services.html:68
+msgid "неттинг"
+msgstr ""
+
+#: templates/services.html:69
+msgid "внутренний банк"
+msgstr ""
+
+#: templates/services.html:75
+msgid "ДИАГНОСТИКА СИСТЕМЫ УПРАВЛЕНИЯ ОБОРОТНЫМ КАПИТАЛОМ"
+msgstr ""
+
+#: templates/services.html:77
+msgid "финансовый, циклический и операционный аспекты"
+msgstr ""
+
+#: templates/services.html:78
+msgid "методы измерения"
+msgstr ""
+
+#: templates/services.html:79
+msgid "связь с ликвидностью"
+msgstr ""
+
+#: templates/services.html:80
+msgid "кредиторская и дебиторская задолженность"
+msgstr ""
+
+#: templates/services.html:82
+msgid "фабрики платежей и общие центры обслуживания"
+msgstr ""
+
+#: templates/services.html:93
+msgid "ДИАГНОСТИКА СИСТЕМЫ УПРАВЛЕНИЯ ФИНАНСОВЫМИ РИСКАМИ"
+msgstr ""
+
+#: templates/services.html:95
+msgid ""
+"виды рисков - риск ликвидности, риск банка-контрагента, процентный, "
+"валютный, товарный, риск поставщика, риск покупателя, операционный риск и"
+" др."
+msgstr ""
+
+#: templates/services.html:98
+msgid "лимиты"
+msgstr ""
+
+#: templates/services.html:101
+msgid "мониторинг"
+msgstr ""
+
+#: templates/services.html:103
+msgid "моделирование и сценарный анализ"
+msgstr ""
+
+#: templates/services.html:104
+msgid "инструменты управления рисками"
+msgstr ""
+
+#: templates/services.html:105
+msgid "хеджирование"
+msgstr ""
+
+#: templates/services.html:106
+msgid "заключение сделок"
+msgstr ""
+
+#: templates/services.html:107
+msgid "валютная переоценка"
+msgstr ""
+
+#: templates/services.html:113
+msgid "ДИАГНОСТИКА ТЕХНОЛОГИЧЕСКОЙ ИНФРАСТРУКТУРЫ"
+msgstr ""
+
+#: templates/services.html:115
+msgid "казначейская система"
+msgstr ""
+
+#: templates/services.html:116
+msgid "система управления ресурсами предприятия/бухгалтерская система"
+msgstr ""
+
+#: templates/services.html:117
+msgid "облачные решения"
+msgstr ""
+
+#: templates/services.html:118
+msgid "системы распределенного реестра (блокчейн)"
+msgstr ""
+
+#: templates/services.html:119
+msgid "каналы связи с банками"
+msgstr ""
+
+#: templates/services.html:120
+msgid "торговые системы"
+msgstr ""
+
+#: templates/services.html:121
+msgid "информационные системы"
+msgstr ""
+
+#: templates/services.html:127
+msgid "СРАВНЕНИЕ С ЭТАЛОНОМ"
+msgstr ""
+
+#: templates/services.html:128
+msgid "передовыми практиками"
+msgstr ""
+
+#: templates/services.html:139
+msgid ""
+"РАЗРАБОТКА индивидуальной концептуальной целевой МОДЕЛИ системы или "
+"отдельных блоков управления денежными потоками, финансовыми рисками и "
+"оборотным капиталом с учетом специфики компании"
+msgstr ""
+
+#: templates/services.html:145
+msgid "ПЛАН ТРАНСФОРМАЦИИ"
+msgstr ""
+
+#: templates/services.html:146
+msgid "системы в целом или её отдельных блоков"
+msgstr ""
+
+#: templates/services.html:151
+msgid ""
+"РАЗРАБОТКА внутренних регламентных ДОКУМЕНТОВ а так же СОПРОВОЖДЕНИЕ "
+"ВНЕДРЕНИЯ"
+msgstr ""
+
+#: templates/services.html:170
 msgid ""
 "Независимый от банков консалтинг по банковским продуктам - транзакционные"
 " продукты, продукты финансового рынка, хеджирование, кредитные продукты"
-msgstr "Dont speak"
+msgstr ""
 
-#: templates/index.html:56
-msgid "Обучение персонала"
-msgstr "Learning personal"
+#: templates/services.html:176
+msgid "Соответствие продукта потребностям компании"
+msgstr ""
 
-#: templates/index.html:57
-msgid ""
-"Обучение персонала является безусловно необходимой частью стратегического"
-" планирования и дальнейшего развития компании."
-msgstr "The learning personal is very nice idea"
+#: templates/services.html:181
+msgid "Структура и параметры продукта"
+msgstr ""
 
-#: templates/index.html:69
-msgid "Наша компания"
-msgstr "Our Company"
+#: templates/services.html:186
+msgid "Ценовые условия"
+msgstr ""
 
-#: templates/index.html:70
-msgid "Просто текст под шаблон и какие-нибудь записи"
-msgstr "Is's a simple simple tet for template content"
+#: templates/services.html:202
+msgid "Проведение профессиональных тренингов по темам"
+msgstr ""
 
-#: templates/index.html:70
-msgid ""
-"Вторая часть простого текста необходимого для отображения на странице "
-"содержимого"
-msgstr "The second part of text for visible content on a page"
+#: templates/services.html:207
+msgid "Управление денежными потоками и ликвидностью"
+msgstr ""
 
-#: templates/index.html:104
-msgid "Цитаты"
-msgstr "Citats"
+#: templates/services.html:217
+msgid "Физический и виртуальный пулинг"
+msgstr ""
 
-#: templates/index.html:109 templates/index.html:110 templates/index.html:111
-msgid "Цитата"
-msgstr "Citata"
+#: templates/services.html:227
+msgid "Транзакционные банковские продукты"
+msgstr ""
 
-#: templates/index.html:121
-msgid "Последние новости"
-msgstr "The last news"
+#: templates/services.html:232
+msgid "Продукты финансового рынка"
+msgstr ""
 
-#: templates/index.html:144
-msgid "Отзывы"
-msgstr "Reviews"
-
-#: templates/index.html:153
-msgid "Технический директор"
-msgstr "The technical director"
+#: templates/services.html:237
+msgid "Хеджирование"
+msgstr ""
 

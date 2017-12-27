@@ -22,7 +22,7 @@
               <div class="slide-1"></div>
               <div class="hero">
                 <hgroup>
-                    <h2>Построение и оптимизация корпоративного казначейства</h2>
+                    <h2>{{ gettext('Построение и оптимизация корпоративного казначейства')}}</h2>
                 </hgroup>
               </div>
             </div>
@@ -30,7 +30,7 @@
               <div class="slide-2"></div>
               <div class="hero">
                 <hgroup>
-                    <h2>Управление денежными потоками</h2>
+                    <h2>{{ gettext('Управление денежными потоками')}}</h2>
                 </hgroup>
               </div>
             </div>
@@ -38,7 +38,7 @@
               <div class="slide-3"></div>
               <div class="hero">
                 <hgroup>
-                    <h2>Управление финансовыми рисками</h2>
+                    <h2>{{ gettext('Управление финансовыми рисками')}}</h2>
                 </hgroup>
               </div>
             </div>
@@ -46,7 +46,7 @@
               <div class="slide-4"></div>
               <div class="hero">
                 <hgroup>
-                    <h2>Управление оборотным капиталом</h2>
+                    <h2>{{ gettext('Управление оборотным капиталом')}}</h2>
                 </hgroup>
               </div>
             </div>
@@ -54,7 +54,7 @@
               <div class="slide-5"></div>
               <div class="hero">
                 <hgroup>
-                    <h2>Банковские продукты</h2>
+                    <h2>{{ gettext('Банковские продукты')}}</h2>
                 </hgroup>
               </div>
             </div>
@@ -62,7 +62,7 @@
               <div class="slide-6"></div>
               <div class="hero">
                 <hgroup>
-                    <h1>Обучение персонала</h1>
+                    <h1>{{ gettext('Обучение персонала')}}</h1>
                 </hgroup>
               </div>
             </div>
@@ -84,7 +84,7 @@
                         ЛУЧШИХ МЕЖДУНАРОДНЫХ И РОССИЙСКИХ ПРАКТИК.') }}
                         <br>
                         <br>
-                        <h3 style="text-align: center">НАПРАВЛЕНИЯ НАШЕЙ РАБОТЫ</h3>
+                        <h3 style="text-align: center">{{ gettext('НАПРАВЛЕНИЯ НАШЕЙ РАБОТЫ')}}</h3>
                     </div>
                     <br/>
                 </div>
@@ -120,7 +120,7 @@
                     </div>
                 </div>
             </div>
-                <a href="/services/" class="btn btn-primary waves-effect waves-dark center-block" style="height: 40px; width: 180px; margin-bottom: 6%;">Наши услуги</a>
+                <a href="/services/" class="btn btn-primary waves-effect waves-dark center-block" style="height: 40px; width: 180px; margin-bottom: 6%;">{{ gettext('Наши услуги')}}</a>
         </div>
 	</section>
 	
@@ -148,7 +148,7 @@
 {#					</div>#}
 {#				</div>#}
 			</div>
-            <a href="/about/" class="btn btn-primary waves-effect waves-dark center-block" style="height: 40px; width: 180px; align-content: center">Наша команда</a>
+            <a href="/about/" class="btn btn-primary waves-effect waves-dark center-block" style="height: 40px; width: 180px; align-content: center">{{ gettext('Наша команда')}}</a>
 		</div>
 	</section>	  
 
@@ -176,7 +176,6 @@
 								</li>
 							  </ul>
 														 <!-- Accordion ends -->
-								
 							</div>
 
 
@@ -200,10 +199,8 @@
 								</li>
 							  </ul>
 														 <!-- Accordion ends -->
-
 							</div>
 
-							
 							<div class="col-md-4">
 								<div class="block-heading-two">
 									<h3><span>{{ gettext('Отзыв') }}</span></h3>
@@ -211,17 +208,14 @@
 								     <div class="testimonials">
 										<div class="active item">
 										  <blockquote>
-                                              <p>
-                                                 От имени Ассоциации корпоративных казначеев я хотел бы поблагодарить
-                                                 Вас за успешное проведение семинара на тему «Управление денежными потоками
-                                                 и ликвидностью» для казначейств компаний, входящих в ГК «Ростех»
+                                              <p>{{ gettext('От имени Ассоциации корпоративных казначеев я хотел бы поблагодарить Вас за успешное проведение семинара на тему «Управление денежными потоками и ликвидностью» для казначейств компаний, входящих в ГК «Ростех»')}}
                                               </p>
                                           </blockquote>
 										  <div class="carousel-info">
 											<img alt="" src="{{ url_for ('static', filename='img/reviews/review_1.png')}}" class="pull-left">
 											<div class="pull-left">
-											  <span class="testimonials-name">Владимир Козинец</span>
-											  <span class="testimonials-post">{{ gettext('Президент') }}</span>
+											  <span class="testimonials-name">{{ gettext('Владимир Козинец')}}</span>
+											  <span class="testimonials-post">{{ gettext('Президент')}}</span>
                                               <span class="testimonials-post">{{ gettext('Ассоциации корпоративных казначеев') }}</span>
 											</div>
 										  </div>
@@ -231,7 +225,6 @@
 						</div>
 						<br>
                 </div>
-
     </div>
 
 {% endblock %}
