@@ -103,11 +103,11 @@ msgstr ""
 
 #: templates/about.html:60 templates/about.html:75
 msgid "работа с ведущими российскими и международными компаниями"
-msgstr ""
+msgstr "work with leading Russian and international companies"
 
 #: templates/about.html:70
 msgid "Марина Завгородняя"
-msgstr ""
+msgstr "Marina Zavgorodnaya"
 
 #: templates/about.html:72
 msgid ""
@@ -131,19 +131,19 @@ msgstr ""
 
 #: templates/base.html:88
 msgid "Быстрые ссылки"
-msgstr ""
+msgstr "Quick links"
 
 #: templates/base.html:99 templates/index.html:161
 msgid "Последние новости"
-msgstr ""
+msgstr "Last news"
 
 #: templates/contact.html:21
 msgid "Будем рады оказать Вам"
-msgstr ""
+msgstr "We will be happy to assist you"
 
 #: templates/contact.html:21
 msgid "помощь"
-msgstr ""
+msgstr "help"
 
 #: templates/contact.html:23
 msgid ""
@@ -153,47 +153,47 @@ msgstr ""
 
 #: templates/contact.html:35
 msgid "Имя"
-msgstr ""
+msgstr "Name"
 
 #: templates/contact.html:39
 msgid "Email адрес"
-msgstr ""
+msgstr "Email"
 
 #: templates/contact.html:43
 msgid "Контактный телефон"
-msgstr ""
+msgstr "Contact phone"
 
 #: templates/contact.html:47
 msgid "Компания"
-msgstr ""
+msgstr "Company"
 
 #: templates/contact.html:53
 msgid "Отправить"
-msgstr ""
+msgstr "Send"
 
 #: templates/index.html:25
 msgid "Построение и оптимизация корпоративного казначейства"
-msgstr ""
+msgstr "Construction and optimization of corporate treasury"
 
 #: templates/index.html:33
 msgid "Управление денежными потоками"
-msgstr ""
+msgstr "Cash management"
 
 #: templates/index.html:41
 msgid "Управление финансовыми рисками"
-msgstr ""
+msgstr "Financial Risk Management"
 
 #: templates/index.html:49 templates/services.html:212
 msgid "Управление оборотным капиталом"
-msgstr ""
+msgstr "Working capital management"
 
 #: templates/index.html:57 templates/index.html:107 templates/services.html:169
 msgid "Банковские продукты"
-msgstr ""
+msgstr "Bank products"
 
 #: templates/index.html:65 templates/index.html:116 templates/services.html:201
 msgid "Обучение персонала"
-msgstr ""
+msgstr "Training"
 
 #: templates/index.html:80
 msgid ""
@@ -209,7 +209,7 @@ msgstr ""
 
 #: templates/index.html:87
 msgid "НАПРАВЛЕНИЯ НАШЕЙ РАБОТЫ"
-msgstr ""
+msgstr "DIRECTIONS OF OUR WORK"
 
 #: templates/index.html:97 templates/services.html:36
 msgid ""
@@ -241,7 +241,7 @@ msgstr ""
 
 #: templates/index.html:123
 msgid "Наши услуги"
-msgstr ""
+msgstr "Our services"
 
 #: templates/index.html:132
 msgid ""
@@ -253,15 +253,15 @@ msgstr ""
 
 #: templates/index.html:151
 msgid "Наша команда"
-msgstr ""
+msgstr "our team"
 
 #: templates/index.html:184
 msgid "Индикаторы рынков"
-msgstr ""
+msgstr "Market Indicators"
 
 #: templates/index.html:206
 msgid "Отзыв"
-msgstr ""
+msgstr "Feedback"
 
 #: templates/index.html:211
 msgid ""
@@ -272,23 +272,23 @@ msgstr ""
 
 #: templates/index.html:217
 msgid "Владимир Козинец"
-msgstr ""
+msgstr "Vladimir Kozinets"
 
 #: templates/index.html:218
 msgid "Президент"
-msgstr ""
+msgstr "The president"
 
 #: templates/index.html:219
 msgid "Ассоциации корпоративных казначеев"
-msgstr ""
+msgstr "Association of corporate treasurers"
 
 #: templates/services.html:21
 msgid "Наши"
-msgstr ""
+msgstr "Our"
 
 #: templates/services.html:21
 msgid "услуги"
-msgstr ""
+msgstr "services"
 
 #: templates/services.html:22
 msgid ""
