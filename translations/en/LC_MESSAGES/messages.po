@@ -48,9 +48,9 @@ msgid ""
 "интересно делиться опытом, помогать решать задачи и создавать новое. Для "
 "нас это творчество"
 msgstr ""
-"For us, this is not a race or a struggle for survival or redistribution of the market. Us"
-"it is interesting to share experiences, help solve problems and create new ones. For"
-"us this creativity"
+"For us, this is not a race or a struggle for survival or redistribution "
+"of the market. Usit is interesting to share experiences, help solve "
+"problems and create new ones. Forus this creativity"
 
 #: templates/about.html:26
 msgid "У нас уникальные знания и опыт, которые крайне редки на рынке"

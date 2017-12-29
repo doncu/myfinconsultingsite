@@ -18,14 +18,14 @@
 				<div class="col-md-6 col-sm-6">
 					<img class="img-responsive" src="{{ url_for ('static', filename='img/about_us_dev.png')}}" alt="showcase image" style="padding-bottom: 10%; padding-top: 5%">
 				</div>
-				<div class="col-md-6 col-sm-6">
+				<div class="col-md-6 col-sm-6" style="margin-top: 4%">
 					<div class="about-text">
 						<h2 align="center" style="padding-bottom: 0; margin-top: 0;">{{ gettext('Почему')}} <span class="color">{{ gettext('мы')}} ?</span></h2>
-						<ul>
-                            <li><p style="text-align: justify">- &nbsp; {{ gettext('Для нас это не гонка и не борьба за выживание или передел рынка. Нам интересно делиться опытом, помогать решать задачи и создавать новое. Для нас это творчество')}}.</p></li>
-                            <li><p style="text-align: justify">- &nbsp;&nbsp; {{ gettext('У нас уникальные знания и опыт, которые крайне редки на рынке')}}</p></li>
-                            <li><p style="text-align: justify">- &nbsp; {{ gettext('Мы решаем задачи в ВАШИХ интересах. Это значит, что мы ставим себя на Ваше место и советуем только то, что ДЕЙСТВИТЕЛЬНО нужно Вашему бизнесу и принесет пользу именно Вам')}}.</p></li>
-                            <li><p style="text-align: justify">-&nbsp; {{ gettext('Мы не будем Вам советовать «инновационные» решения, если они Вам реально не нужны сейчас')}}.</p></li>
+						<ul style="display: block; list-style-type: disc; -webkit-margin-before: 1em; -webkit-margin-after: 1em; -webkit-margin-start: 0; -webkit-margin-end: 0; -webkit-padding-start: 8%;">
+                            <li style="list-style-type: disc"><p style="text-align: justify">{{ gettext('Для нас это не гонка и не борьба за выживание или передел рынка. Нам интересно делиться опытом, помогать решать задачи и создавать новое. Для нас это творчество')}}.</p></li>
+                            <li style="list-style-type: disc"><p style="text-align: justify">{{ gettext('У нас уникальные знания и опыт, которые крайне редки на рынке')}}</p></li>
+                            <li style="list-style-type: disc"><p style="text-align: justify">{{ gettext('Мы решаем задачи в ВАШИХ интересах. Это значит, что мы ставим себя на Ваше место и советуем только то, что ДЕЙСТВИТЕЛЬНО нужно Вашему бизнесу и принесет пользу именно Вам')}}.</p></li>
+                            <li style="list-style-type: disc"><p style="text-align: justify">{{ gettext('Мы не будем Вам советовать «инновационные» решения, если они Вам реально не нужны сейчас')}}.</p></li>
                         </ul>
 					</div>
 				</div>
@@ -41,38 +41,42 @@
             </div>
             <br>
             <!-- Our team starts -->
-            <div class="team-six" style="margin-bottom: -8%">
-                <div class="row">
+            <div class="team-six" style="margin-bottom: 0">
+                <div class="row" style="margin-bottom: 0">
                     <div class="col-md-6 col-sm-6" style="margin-bottom: 10%">
                         <!-- Team Member -->
-                        <div class="team-member" style="border-radius: 10px; box-shadow: 0 0 7px 3px #3a5d85; text-indent: 30px; padding: 10px 20px 10px 20px;">
+                        <div class="team-member" style="border-radius: 10px; box-shadow: 0 0 7px 3px #3a5d85; padding: 10px 20px 10px 20px">
                             <!-- Image -->
                             <img style="margin: auto;" class="img-responsive" src="{{ url_for ('static', filename='img/team2.png')}}" alt="">
                             <!-- Name -->
-                            <h4>{{ gettext('Юрий Авраменко')}}</h4>
+                            <h4 style="text-align: center">{{ gettext('Юрий Авраменко')}}</h4>
                             <span class="deg">{{ gettext('к.э.н.')}}</span>
                             <div class="about-text">
-                                <p style="text-align: justify">- {{ gettext('Специализация: транзакционные продукты, консалтинг по построению
-                                казначейств, фабрик платежей и единых центров обслуживания,
-                                управление рисками')}}</p>
-                                <p style="text-align: justify">- &nbsp;&nbsp; {{ gettext('24 года в ведущих международных банках: Ситибанк, АБН АМРО, ММБ (теперь Юникредит)')}}</p>
-                                <p style="text-align: left">- &nbsp;&nbsp; {{ gettext('руководство международным кластером (8 стран) и многонациональными командами')}}</p>
-                                <p style="text-align: justify">- &nbsp;&nbsp; {{ gettext('работа с ведущими российскими и международными компаниями')}}</p>
+                                <ul style="display: block; list-style-type: disc; -webkit-margin-before: 1em; -webkit-margin-after: 1em; -webkit-margin-start: 0; -webkit-margin-end: 0; -webkit-padding-start: 8%;">
+                                    <li style="list-style-type: disc"><p style="text-align: justify">{{ gettext('Специализация: транзакционные продукты, консалтинг по построению
+                                    казначейств, фабрик платежей и единых центров обслуживания,
+                                    управление рисками')}}</p></li>
+                                    <li style="list-style-type: disc"><p style="text-align: justify">{{ gettext('24 года в ведущих международных банках: Ситибанк, АБН АМРО, ММБ (теперь Юникредит)')}}</p></li>
+                                    <li style="list-style-type: disc"><p style="text-align: left">{{ gettext('руководство международным кластером (8 стран) и многонациональными командами')}}</p></li>
+                                    <li style="list-style-type: disc"><p style="text-align: justify">{{ gettext('работа с ведущими российскими и международными компаниями')}}</p></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-sm-6">
+                    <div class="col-md-6 col-sm-6" style="margin-bottom: 5%">
                         <!-- Team Member -->
-                        <div class="team-member" style="border-radius: 10px; box-shadow: 0 0 7px 3px #3a5d85; text-indent: 30px; padding: 10px 20px 10px 20px;">
+                        <div class="team-member" style="border-radius: 10px; box-shadow: 0 0 7px 3px #3a5d85; padding: 10px 20px 10px 20px;">
                             <!-- Image -->
                             <img style="margin: auto;" class="img-responsive" src="{{ url_for ('static', filename='img/team1.png')}}" alt="">
                             <!-- Name -->
                             <h4 style="margin-bottom: 2%">{{ gettext('Марина Завгородняя')}}</h4>
-                            <div class="about-text" style="margin-bottom: 5%">
-                                <p style="text-align: justify">- {{ gettext('Специализация: продукты финансового рынка, управление финансовыми рисками, кредитование с иcпользованием акций и др. ценных бумаг')}}</p>
-                                <p style="text-align: justify">- &nbsp; {{ gettext('24 года в ведущих международных банках: Ситибанк, ИНГ Банк, ММБ (теперь Юникредит)')}}</p>
-                                <p style="text-align: justify">- &nbsp; {{ gettext('руководство департаментами маркетинга и продаж финансовых инструментов')}}</p>
-                                <p style="text-align: justify">- &nbsp;&nbsp; {{ gettext('работа с ведущими российскими и международными компаниями')}} </p>
+                            <div class="about-text" style="margin-bottom: 7.5%">
+                                <ul style="display: block; list-style-type: disc; -webkit-margin-before: 1em; -webkit-margin-after: 1em; -webkit-margin-start: 0; -webkit-margin-end: 0; -webkit-padding-start: 8%;">
+                                    <li style="list-style-type: disc"><p style="text-align: justify">{{ gettext('Специализация: продукты финансового рынка, управление финансовыми рисками, кредитование с иcпользованием акций и др. ценных бумаг')}}</p></li>
+                                    <li style="list-style-type: disc"><p style="text-align: justify">{{ gettext('24 года в ведущих международных банках: Ситибанк, ИНГ Банк, ММБ (теперь Юникредит)')}}</p></li>
+                                    <li style="list-style-type: disc"><p style="text-align: justify">{{ gettext('руководство департаментами маркетинга и продаж финансовых инструментов')}}</p></li>
+                                    <li style="list-style-type: disc"><p style="text-align: justify">{{ gettext('работа с ведущими российскими и международными компаниями')}}</p></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
