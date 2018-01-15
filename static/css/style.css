@@ -110,7 +110,8 @@ img.img-polaroid {
 }
 .navbar-default .navbar-toggle {
     border-color: #ddd;
-    margin-top: 10px;
+    margin-top: 10%;
+	margin-right: 0;
 }
 /*  Header
 ==================================== */

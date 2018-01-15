@@ -29,18 +29,19 @@
         <header>
             <div class="navbar navbar-default navbar-static-top">
                 <div class="container">
-                    <div class="navbar-header">
+                    <div class="navbar-header" >
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="/" style="margin-top: 4%; margin-bottom: 12%"><img src="{{ url_for ('static', filename='img/logo5.png')}}" alt="logo"/></a>
+                        <a class="navbar-brand" href="/" style="margin-top: 4%; margin-bottom: 12%; margin-left: 0"><img src="{{ url_for ('static', filename='img/logo5.png')}}" alt="logo"/></a>
                     </div>
-                    <div class="navbar-collapse collapse ">
+
+                    <div class="navbar-collapse collapse">
                         <ul class="nav navbar-nav">
                             {% for item in MENU %}
-                                {% if item.sub %}
+{#                                {% if item.sub %}#}
 {#                                    <li class="dropdown">#}
 {#                                        <a href="{{ url_for(item.alias) }}" data-toggle="dropdown" class="dropdown-toggle waves-effect waves-dark">{{ item.name }}<b class="caret"></b></a>#}
 {#                                        <ul class="dropdown-menu">#}
@@ -51,10 +52,21 @@
 {#                                            {% endfor %}#}
 {#                                        </ul>#}
 {#                                    </li>#}
-                                {% else %}
+{#                                {% else %}#}
                                     <li class="{% if item.alias == alias %}active{% endif %}"><a class="waves-effect waves-dark" href="{{ url_for(item.alias) }}">{{ item.name }}</a></li>
-                                {% endif %}
+{#                                {% endif %}#}
                             {% endfor %}
+                            <li class="dropdown">
+                                <a href="" data-toggle="dropdown" class="dropdown-toggle waves-effect waves-dark">{{ gettext('Язык')}}<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                        <li>
+                                            <a class="waves-effect waves-dark" href="" onclick="setCookie('language', 'ru', {'path':'/'})">ru</a>
+                                        </li>
+                                        <li>
+                                            <a class="waves-effect waves-dark" href="" onclick="setCookie('language', 'en', {'path':'/'})">en</a>
+                                        </li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -151,6 +163,7 @@
         <script src="{{ url_for ('static', filename='js/jquery.magnific-popup.min.js')}}"></script>
         <script src="{{ url_for ('static', filename='js/animate.js')}}"></script>
         <script src="{{ url_for ('static', filename='js/custom.js')}}"></script>
+        <script src="{{ url_for ('static', filename='js/change_language.js')}}"></script>
     {% endblock %}
 
 </body>
