@@ -1,5 +1,5 @@
-from flask import render_template
-
+from flask import render_template, request, redirect, url_for
+from application import email
 from application.app import app
 
 
@@ -13,8 +13,18 @@ def about_view():
     return render_template('about.html', alias='about')
 
 
-@app.route('/contacts/', endpoint='contacts')
+@app.route('/contacts/', methods=['GET', 'POST'], endpoint='contacts')
 def contacts_view():
+    if request.method == 'POST':
+        context = dict(
+            name=request.form.get('name'),
+            email=request.form.get('email'),
+            tel=request.form.get('tel'),
+            company=request.form.get('company'),
+            text=request.form.get('text'),
+        )
+        email.send_mail('email.html', **context)
+        return redirect(url_for('contacts'))
     return render_template("contact.html", alias='contacts')
 
 
@@ -27,7 +37,3 @@ def portfolio_view():
 def services_view():
     return render_template('services.html', alias='services')
 
-
-@app.route('/test', endpoint="test")
-def test_view():
-    return render_template('test.html')

@@ -2,6 +2,7 @@ from email.mime.text import MIMEText
 from flask import render_template
 import functools
 import smtplib
+from config import SMTP_SERVER, SMTP_SENDER, SMTP_PASS, SMTP_RECEIVER, SMTP_PORT
 
 try:
     import uwsgi
@@ -15,20 +16,15 @@ except ImportError:
         return wrapper
 
 
-def send_mail(template, context):
-    SENDER = 'doncusemen@ya.ru'
-    RECEIVER = 'doncusemen@gmail.com'
-    smtp_server = 'smtp.yandex.ru'
+@mule
+def send_mail(template, **context):
     email_string = render_template(template, **context)
-    msg = MIMEText(email_string)
+    msg = MIMEText(email_string, 'html')
     msg['Subject'] = 'Новое обращение с сайта'
-    msg['From'] = SENDER
-    msg['To'] = RECEIVER
+    msg['From'] = SMTP_SENDER
+    msg['To'] = SMTP_RECEIVER
 
-    smtp = smtplib.SMTP(smtp_server)
-    smtp.starttls()
-    smtp.login('doncusemen@ya.ru', 'kamaser999')
+    smtp = smtplib.SMTP_SSL(host=SMTP_SERVER, port=SMTP_PORT)
+    smtp.login(SMTP_SENDER, SMTP_PASS)
     smtp.send_message(msg)
     smtp.quit()
-
-# send_mail(message=" ".join(fraze))
