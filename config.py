@@ -13,7 +13,7 @@ SMTP_SERVER = 'smtp.mail.ru'
 SMTP_PORT = '465'
 SMTP_SENDER = 'contact@myfinconsulting.ru'
 # SMTP_RECEIVER = 'yuri.avramenko@myfinconsulting.ru'
-SMTP_RECEIVER = 'doncusemen@mail.ru'
+SMTP_RECEIVER = 'yuri.avramenko@myfinconsulting.ru'
 SMTP_PASS = 'CrE&SY99wlvj'
 
 BABEL_DEFAULT_LOCALE = 'ru'
