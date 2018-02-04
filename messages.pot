@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-01-15 16:38+0300\n"
+"POT-Creation-Date: 2018-02-05 00:01+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,8 +17,20 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.5.1\n"
 
-#: templates/about.html:9 templates/base.html:103
+#: application/const.py:23 templates/base.html:102
+msgid "Главная"
+msgstr ""
+
+#: application/const.py:24 templates/about.html:9 templates/base.html:103
 msgid "О нас"
+msgstr ""
+
+#: application/const.py:25 templates/base.html:104 templates/services.html:8
+msgid "Услуги"
+msgstr ""
+
+#: application/const.py:27 templates/base.html:105 templates/contact.html:9
+msgid "Контакты"
 msgstr ""
 
 #: templates/about.html:23
@@ -31,41 +43,41 @@ msgstr ""
 
 #: templates/about.html:25
 msgid ""
-"Для нас это не гонка и не борьба за выживание или передел рынка. Нам "
+"У нас уникальные знания и опыт, которые крайне редки на рынке. Нам "
 "интересно делиться опытом, помогать решать задачи и создавать новое. Для "
-"нас это творчество"
+"нас это творчество."
 msgstr ""
 
 #: templates/about.html:26
-msgid "У нас уникальные знания и опыт, которые крайне редки на рынке"
+msgid ""
+"Мы решаем задачи в ВАШИХ интересах. Это значит, что мы ставим себя на "
+"Ваше место и советуем только то, что ДЕЙСТВИТЕЛЬНО нужно Вашему бизнесу и"
+" принесет пользу именно Вам."
 msgstr ""
 
 #: templates/about.html:27
 msgid ""
-"Мы решаем задачи в ВАШИХ интересах. Это значит, что мы ставим себя на "
-"Ваше место и советуем только то, что ДЕЙСТВИТЕЛЬНО нужно Вашему бизнесу и"
-" принесет пользу именно Вам"
-msgstr ""
-
-#: templates/about.html:28
-msgid ""
 "Мы не будем Вам советовать «инновационные» решения, если они Вам реально "
-"не нужны сейчас"
+"не нужны."
 msgstr ""
 
-#: templates/about.html:40
+#: templates/about.html:39
+msgid "Н"
+msgstr ""
+
+#: templates/about.html:39
 msgid "аша команда"
 msgstr ""
 
-#: templates/about.html:52
+#: templates/about.html:51
 msgid "Юрий Авраменко"
 msgstr ""
 
-#: templates/about.html:53
+#: templates/about.html:52
 msgid "к.э.н."
 msgstr ""
 
-#: templates/about.html:56
+#: templates/about.html:55
 msgid ""
 "Специализация: транзакционные продукты, консалтинг по построению\n"
 "                                    казначейств, фабрик платежей и единых"
@@ -73,39 +85,39 @@ msgid ""
 "                                    управление рисками"
 msgstr ""
 
-#: templates/about.html:59
+#: templates/about.html:58
 msgid ""
 "24 года в ведущих международных банках: Ситибанк, АБН АМРО, ММБ (теперь "
 "Юникредит)"
 msgstr ""
 
-#: templates/about.html:60
+#: templates/about.html:59
 msgid ""
 "руководство международным кластером (8 стран) и многонациональными "
 "командами"
 msgstr ""
 
-#: templates/about.html:61 templates/about.html:78
+#: templates/about.html:60 templates/about.html:77
 msgid "работа с ведущими российскими и международными компаниями"
 msgstr ""
 
-#: templates/about.html:72
+#: templates/about.html:71
 msgid "Марина Завгородняя"
 msgstr ""
 
-#: templates/about.html:75
+#: templates/about.html:74
 msgid ""
 "Специализация: продукты финансового рынка, управление финансовыми "
 "рисками, кредитование с иcпользованием акций и др. ценных бумаг"
 msgstr ""
 
-#: templates/about.html:76
+#: templates/about.html:75
 msgid ""
 "24 года в ведущих международных банках: Ситибанк, ИНГ Банк, ММБ (теперь "
 "Юникредит)"
 msgstr ""
 
-#: templates/about.html:77
+#: templates/about.html:76
 msgid "руководство департаментами маркетинга и продаж финансовых инструментов"
 msgstr ""
 
@@ -119,18 +131,6 @@ msgstr ""
 
 #: templates/base.html:100
 msgid "Быстрые ссылки"
-msgstr ""
-
-#: templates/base.html:102
-msgid "Главная"
-msgstr ""
-
-#: templates/base.html:104 templates/services.html:8
-msgid "Услуги"
-msgstr ""
-
-#: templates/base.html:105 templates/contact.html:9
-msgid "Контакты"
 msgstr ""
 
 #: templates/base.html:111 templates/index.html:161
