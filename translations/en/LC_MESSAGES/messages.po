@@ -604,6 +604,10 @@ msgstr "Hedging"
 msgid "Управляющий партнер"
 msgstr "Managing partner"
 
+#: templates/contact.html:44
+msgid "Телефон"
+msgstr "Phone"
+
 #~ msgid ""
 #~ "Руководство международным кластером (8 стран)"
 #~ " и многонациональными командами"

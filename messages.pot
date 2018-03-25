@@ -557,3 +557,7 @@ msgstr ""
 #: templates/about.html:54
 msgid "Управляющий партнер"
 msgstr ""
+
+#: templates/contact.html:44
+msgid "Телефон"
+msgstr ""
