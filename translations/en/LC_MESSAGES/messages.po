@@ -66,18 +66,18 @@ msgstr ""
 #: templates/about.html:27
 msgid ""
 "Мы не будем Вам советовать «инновационные» решения, если они Вам реально "
-"не нужны."
+"не нужны"
 msgstr ""
-"We will not push you to implement &#39;innovative&#39; solutions if they "
-"are not RIGHT for you."
+"We will not push you to implement innovative solutions if they are not "
+"RIGHT for you"
 
 #: templates/about.html:39
-msgid "Н"
-msgstr "O"
+msgid "Р"
+msgstr "C"
 
 #: templates/about.html:39
-msgid "аша команда"
-msgstr "ur team"
+msgid "уководство компании"
+msgstr "ompany management"
 
 #: templates/about.html:51
 msgid "Юрий Авраменко"
@@ -95,24 +95,20 @@ msgid ""
 "                                    управление рисками"
 msgstr ""
 "Specialization: transaction banking products, treasury, payment factories"
-" and sharedservice centers development advisory, risk management"
+" and shared-service centers development advisory, risk management"
 
 #: templates/about.html:58
-msgid ""
-"24 года в ведущих международных банках: Ситибанк, АБН АМРО, ММБ (теперь "
-"Юникредит)"
-msgstr ""
-"24 years in leading international banks: Citibank, ABN AMRO, IMB (now "
-"Unicredit)"
+msgid "24 года в ведущих международных банках: Ситибанк, АБН АМРО, Юникредит"
+msgstr "24 years in leading international banks: ING, Citibank, Unicredit"
 
 #: templates/about.html:59
 msgid ""
-"руководство международным кластером (8 стран) и многонациональными "
+"Руководство международным кластером (8 стран) и многонациональными "
 "командами"
 msgstr "Managed international cluster (8 countries) and multinational teams"
 
 #: templates/about.html:60 templates/about.html:77
-msgid "работа с ведущими российскими и международными компаниями"
+msgid "Работа с ведущими российскими и международными компаниями"
 msgstr "Worked with leading Russian and international companies"
 
 #: templates/about.html:71
@@ -122,21 +118,17 @@ msgstr "Marina Zavgorodnaya"
 #: templates/about.html:74
 msgid ""
 "Специализация: продукты финансового рынка, управление финансовыми "
-"рисками, кредитование с иcпользованием акций и др. ценных бумаг"
+"рисками, кредитование с иcпользованием акций и других ценных бумаг"
 msgstr ""
 "Specialization: financial market products, financial risks management, "
 "securities financing"
 
 #: templates/about.html:75
-msgid ""
-"24 года в ведущих международных банках: Ситибанк, ИНГ Банк, ММБ (теперь "
-"Юникредит)"
-msgstr ""
-"24 years in leading international banks: Citibank, ABN AMRO, IMB (now "
-"Unicredit)"
+msgid "24 года в ведущих международных банках: Ситибанк, ИНГ Банк, Юникредит"
+msgstr "24 years in leading international banks: ING, Citibank, Unicredit"
 
 #: templates/about.html:76
-msgid "руководство департаментами маркетинга и продаж финансовых инструментов"
+msgid "Руководство департаментами маркетинга и продаж финансовых инструментов"
 msgstr "Managed financial market products sales and marketing departments"
 
 #: templates/base.html:60
@@ -157,19 +149,19 @@ msgstr "Last news"
 
 #: templates/contact.html:21
 msgid "Будем рады оказать Вам"
-msgstr "We will be happy to assist you"
+msgstr "We will be happy to"
 
 #: templates/contact.html:21
 msgid "помощь"
-msgstr "help"
+msgstr "help you"
 
 #: templates/contact.html:23
 msgid ""
 "Вы можете связаться с нами по указанным ниже телефонам, электронной почте"
 " или заполнив форму обратной связи"
 msgstr ""
-"You can contact us at the numbers below, by e-mail or by filling out the "
-"feedback form."
+"You can contact us by the numbers below, by e-mail or by filling out the "
+"feedback form"
 
 #: templates/contact.html:35
 msgid "Имя"
@@ -240,8 +232,8 @@ msgid ""
 "Построение/оптимизация системы управления денежными потоками, финансовыми"
 " рисками и оборотным капиталом"
 msgstr ""
-"Set up and development of corporate treasury for efficient management of "
-"cash flows, financial risks and working capital"
+"CORPORATE TREASURY SET UP AND DEVELOPMENT FOR EFFICIENT MANAGEMENT OF "
+"CASH FLOWS, FINANCIAL RISKS AND WORKING CAPITAL"
 
 #: templates/index.html:98
 msgid ""
@@ -283,8 +275,8 @@ msgid ""
 "\t\t\t\t\t\t    банках мира"
 msgstr ""
 "Our team consists of highly qualified professionals who have acquired "
-"unique knowledge and experience during tens of years of work in the "
-"leading international banks"
+"unique knowledge and experience during decades of work in the leading "
+"international banks"
 
 #: templates/index.html:151
 msgid "Наша команда"
@@ -403,7 +395,7 @@ msgstr "Physical and Notional Pooling"
 
 #: templates/services.html:66
 msgid "инвестирование"
-msgstr "investings"
+msgstr "investments"
 
 #: templates/services.html:67
 msgid "неттинг"
@@ -449,7 +441,7 @@ msgid ""
 msgstr ""
 "types of risks: liquidity risk, counterparty risk, interest rate risk, "
 "foreign exchange risk, commodity risk, supplier risk, buyer risk, "
-"operational risk, etc"
+"operational risk, etc."
 
 #: templates/services.html:97
 msgid "лимиты"
@@ -517,7 +509,7 @@ msgstr "BEHCNMARKING WITH THE IDEAL MODEL"
 
 #: templates/services.html:127
 msgid "передовыми практиками"
-msgstr "BEST-IN- CLASS STANDARD"
+msgstr "BEST-IN-CLASS STANDARD"
 
 #: templates/services.html:138 templates/services.html:152
 msgid "РАЗРАБОТКА"
@@ -607,4 +599,69 @@ msgstr "Financial market products"
 #: templates/services.html:238
 msgid "Хеджирование"
 msgstr "Hedging"
+
+#~ msgid ""
+#~ "Руководство международным кластером (8 стран)"
+#~ " и многонациональными командами"
+#~ msgstr "Managed international cluster (8 countries) and multinational teams"
+
+#~ msgid "Работа с ведущими российскими и международными компаниями"
+#~ msgstr "Worked with leading Russian and international companies"
+
+#~ msgid "Руководство департаментами маркетинга и продаж финансовых инструментов"
+#~ msgstr "Managed financial market products sales and marketing departments"
+
+#~ msgid "24 года в ведущих международных банках: Ситибанк, ИНГ Банк, Юникредит"
+#~ msgstr "24 years in leading international banks: Citibank, ABN AMRO, IMB "
+
+#~ msgid "работа с ведущими российскими и международными компаниями"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "24 года в ведущих международных банках:"
+#~ " Ситибанк, АБН АМРО, ММБ (теперь "
+#~ "Юникредит)"
+#~ msgstr ""
+#~ "24 years in leading international banks:"
+#~ " Citibank, ABN AMRO, IMB (now "
+#~ "Unicredit)"
+
+#~ msgid ""
+#~ "руководство международным кластером (8 стран)"
+#~ " и многонациональными командами"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "24 года в ведущих международных банках:"
+#~ " Ситибанк, ИНГ Банк, ММБ (теперь "
+#~ "Юникредит)"
+#~ msgstr ""
+
+#~ msgid "руководство департаментами маркетинга и продаж финансовых инструментов"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Специализация: продукты финансового рынка, "
+#~ "управление финансовыми рисками, кредитование с"
+#~ " иcпользованием акций и др. ценных "
+#~ "бумаг"
+#~ msgstr ""
+#~ "Specialization: financial market products, "
+#~ "financial risks management, securities "
+#~ "financing"
+
+#~ msgid ""
+#~ "Мы не будем Вам советовать "
+#~ "«инновационные» решения, если они Вам "
+#~ "реально не нужны."
+#~ msgstr ""
+#~ "We will not push you to implement"
+#~ " innovative solutions if they are not"
+#~ " RIGHT for you."
+
+#~ msgid "Н"
+#~ msgstr "O"
+
+#~ msgid "аша команда"
+#~ msgstr "ur team"
 
