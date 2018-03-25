@@ -554,3 +554,6 @@ msgstr ""
 msgid "Хеджирование"
 msgstr ""
 
+#: templates/about.html:54
+msgid "Управляющий партнер"
+msgstr ""

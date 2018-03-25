@@ -600,6 +600,10 @@ msgstr "Financial market products"
 msgid "Хеджирование"
 msgstr "Hedging"
 
+#: templates/about.html:54
+msgid "Управляющий партнер"
+msgstr "Managing partner"
+
 #~ msgid ""
 #~ "Руководство международным кластером (8 стран)"
 #~ " и многонациональными командами"
