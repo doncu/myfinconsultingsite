@@ -50,9 +50,22 @@
                       <div class="form-group">
                           <textarea class="form-control" rows="3" name="text" title=""></textarea>
                       </div>
-                      <div class="g-recaptcha" style="margin-top: 2%; margin-bottom: 2%" data-sitekey="6LczwFEUAAAAACXpO7XNczct8Y0SdzFTrVHFYQzi"></div>
-                      <button type="submit" onclick="alert('Сообщение отправлено')" class="btn btn-default">{{ gettext('Отправить')}}</button>
+                      {#  <div class="g-recaptcha" style="margin-top: 2%; margin-bottom: 2%" data-sitekey="6LczwFEUAAAAACXpO7XNczct8Y0SdzFTrVHFYQzi"></div> #}
+                      <div class="form-group">
+                        <input type="checkbox" id="politics" style="opacity: 1; position: static; margin-right: 5px" onclick="check();" value="" autocomplete="off"/>Нажимая на кнопку "Отправить", вы даёте <a href="http://ppt.ru/forms/personal-data/soglasie" target="_blank">согласие на обработку персональных данных.</a>
+                      </div>
+
+                      <button type="submit" name="submit" disabled="" onclick="alert('Сообщение отправлено')" class="btn btn-default">{{ gettext('Отправить')}}</button>
                     </form>
+                    <script>
+                        function check() {
+                        var submit = document.getElementsByName('submit')[0];
+                        if (document.getElementById('politics').checked)
+                        submit.disabled = '';
+                        else
+                        submit.disabled = 'disabled';
+                        }
+                    </script>
                 </div>
             <div class="col-md-6">
                 <img class="responsive-img" src="{{ url_for ('static', filename='img/contact_logo.png')}}">
