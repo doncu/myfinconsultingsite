@@ -13,7 +13,11 @@ SMTP_SERVER = 'smtp.mail.ru'
 SMTP_PORT = '465'
 SMTP_SENDER = 'contact@myfinconsulting.ru'
 # SMTP_RECEIVER = 'yuri.avramenko@myfinconsulting.ru'
-SMTP_RECEIVER = 'yuri.avramenko@myfinconsulting.ru'
+SMTP_RECEIVER = 'doncusemen@mail.ru'
 SMTP_PASS = 'CrE&SY99wlvj'
 
 BABEL_DEFAULT_LOCALE = 'ru'
+
+
+RECAPTCHA_SITE_KEY = '6LczwFEUAAAAACXpO7XNczct8Y0SdzFTrVHFYQzi'
+RECAPTCHA_SECRET_KEY = '6LczwFEUAAAAAFQGpf1jXQYo_QO1AgpdSiO0xYcV'
