@@ -4,6 +4,8 @@ from flask import request
 from flask_babel import Babel
 from flask_admin import Admin
 
+from flask_recaptcha import ReCaptcha
+
 import config
 from application import db
 from application import const
@@ -19,6 +21,7 @@ admin = Admin(
     template_mode='bootstrap3'
 )
 babel = Babel(app)
+recaptcha = ReCaptcha(app)
 app.add_template_global(const.MENU, 'MENU')
 app.add_template_global(const.YEAR, name='YEAR')
 

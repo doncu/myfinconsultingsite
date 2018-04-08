@@ -1,6 +1,7 @@
 from flask import render_template, request, redirect, url_for
 from application import email
 from application.app import app
+from application.app import recaptcha
 
 
 @app.route('/', endpoint='index')
@@ -15,7 +16,7 @@ def about_view():
 
 @app.route('/contacts/', methods=['GET', 'POST'], endpoint='contacts')
 def contacts_view():
-    if request.method == 'POST':
+    if request.method == 'POST' and recaptcha.verify():
         context = dict(
             name=request.form.get('name'),
             email=request.form.get('email'),
@@ -25,6 +26,8 @@ def contacts_view():
         )
         email.send_mail('email.html', **context)
         return redirect(url_for('contacts'))
+    else:
+        pass
     return render_template("contact.html", alias='contacts')
 
 
