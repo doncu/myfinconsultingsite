@@ -230,22 +230,12 @@ msgid ""
 "хеджирование, кредитные продукты"
 msgstr ""
 
-#: templates/index.html:117
-msgid ""
-"Тренинги по основным функциям казначейств и\n"
-"                            банковским продуктам"
-msgstr ""
-
 #: templates/index.html:123
 msgid "Наши услуги"
 msgstr ""
 
-#: templates/index.html:132
-msgid ""
-"Наша команда состоит из высококомпететных профессионалов,\n"
-"\t\t\t\t\t\t    приобретших уникальные знания и опыт за десятки лет "
-"работы в ведущих международных\n"
-"\t\t\t\t\t\t    банках мира"
+#: templates/index.html:127
+msgid "Наша команда состоит из высококомпетентных профессионалов, приобретших уникальные знания и опыт за десятки лет работы в ведущих международных банках мира"
 msgstr ""
 
 #: templates/index.html:151
@@ -556,4 +546,44 @@ msgstr ""
 
 #: templates/contact.html:44
 msgid "Телефон"
+msgstr ""
+
+#: templates/index.html:145
+msgid "АКТУАЛЬНО"
+msgstr ""
+
+#: templates/index.html:150
+msgid "Ассоциация корпоративных казначеев (Россия)"
+msgstr ""
+
+#: templates/index.html:154
+msgid "Европейская Ассоциация корпоративных казначеев"
+msgstr ""
+
+#: templates/index.html:158
+msgid "Международная группа Ассоциаций Казначеев"
+msgstr ""
+
+#: templates/index.html:167
+msgid "АССОЦИАЦИИ КОРПОРАТИВНЫХ КАЗНАЧЕЕВ"
+msgstr ""
+
+#: templates/base.html:111
+msgid "ИНДИКАТОРЫ РЫНКОВ"
+msgstr ""
+
+#: templates/base.html:113
+msgid "Торги на валютном рынке"
+msgstr ""
+
+#: templates/base.html:114
+msgid "Ставки межбанковского рынка"
+msgstr ""
+
+#: templates/index.html:113
+msgid "Тренинги по основным функциям казначейства и банковским продуктам"
+msgstr ""
+
+#: templates/base.html:126
+msgid "Все права защищены"
 msgstr ""

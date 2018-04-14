@@ -16,7 +16,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.5.1\n"
+"Generated-By: Babel 2.5.3\n"
 
 #: application/const.py:23 templates/base.html:102
 msgid "Главная"
@@ -95,11 +95,13 @@ msgid ""
 "                                    управление рисками"
 msgstr ""
 "Specialization: transaction banking products, treasury, payment factories"
-" and shared-service centers development advisory, risk management"
+" and shared service centers development advisory, risk management"
 
 #: templates/about.html:58
 msgid "24 года в ведущих международных банках: Ситибанк, АБН АМРО, Юникредит"
-msgstr "24 years in leading international banks: ING, Citibank, Unicredit"
+msgstr ""
+"24 years in leading international banks: ABN AMRO Bank, Citibank, "
+"Unicredit"
 
 #: templates/about.html:59
 msgid ""
@@ -255,24 +257,15 @@ msgstr ""
 "Bank agnostic consulting on bank products - transaction banking products,"
 " financial market products, derivatives & hedging, loan products"
 
-#: templates/index.html:117
-msgid ""
-"Тренинги по основным функциям казначейств и\n"
-"                            банковским продуктам"
-msgstr ""
-"Training programs on the main functions of corporate treasury and bank "
-"products"
-
 #: templates/index.html:123
 msgid "Наши услуги"
 msgstr "Our services"
 
-#: templates/index.html:132
+#: templates/index.html:127
 msgid ""
-"Наша команда состоит из высококомпететных профессионалов,\n"
-"\t\t\t\t\t\t    приобретших уникальные знания и опыт за десятки лет "
-"работы в ведущих международных\n"
-"\t\t\t\t\t\t    банках мира"
+"Наша команда состоит из высококомпетентных профессионалов, приобретших "
+"уникальные знания и опыт за десятки лет работы в ведущих международных "
+"банках мира"
 msgstr ""
 "Our team consists of highly qualified professionals who have acquired "
 "unique knowledge and experience during decades of work in the leading "
@@ -391,7 +384,7 @@ msgstr "cash concentration"
 
 #: templates/services.html:65
 msgid "физический и виртуальный пулинг"
-msgstr "Physical and Notional Pooling"
+msgstr "physical and Notional Pooling"
 
 #: templates/services.html:66
 msgid "инвестирование"
@@ -608,6 +601,48 @@ msgstr "Managing partner"
 msgid "Телефон"
 msgstr "Phone"
 
+#: templates/index.html:145
+msgid "АКТУАЛЬНО"
+msgstr "INSIGHTS"
+
+#: templates/index.html:150
+msgid "Ассоциация корпоративных казначеев (Россия)"
+msgstr "Association of Corporate Tresurers (Russia)"
+
+#: templates/index.html:154
+msgid "Европейская Ассоциация корпоративных казначеев"
+msgstr "The European Association of Corporate Treasurers"
+
+#: templates/index.html:158
+msgid "Международная группа Ассоциаций Казначеев"
+msgstr "The International Group of Treasury Associations"
+
+#: templates/index.html:167
+msgid "АССОЦИАЦИИ КОРПОРАТИВНЫХ КАЗНАЧЕЕВ"
+msgstr "ASSOCIATION OF CORPORATE TREASURERS"
+
+#: templates/base.html:111
+msgid "ИНДИКАТОРЫ РЫНКОВ"
+msgstr "MARKET INDICATORS"
+
+#: templates/base.html:113
+msgid "Торги на валютном рынке"
+msgstr "FX Market"
+
+#: templates/base.html:114
+msgid "Ставки межбанковского рынка"
+msgstr "Interbank Interest Rates"
+
+#: templates/index.html:113
+msgid "Тренинги по основным функциям казначейства и банковским продуктам"
+msgstr ""
+"Training programs on the main functions of corporate treasury and bank "
+"products"
+
+#: templates/base.html:126
+msgid "Все права защищены"
+msgstr "All rights reserved"
+
 #~ msgid ""
 #~ "Руководство международным кластером (8 стран)"
 #~ " и многонациональными командами"
@@ -690,4 +725,10 @@ msgstr "Phone"
 #~ "TAKING INTO ACCOUNT THE COMPANY "
 #~ "SPECIFICS AND THE BEST INTERNATIONAL AND"
 #~ " RUSSIAN PRACTICES"
+
+#~ msgid "Тренинги по основным функциям казначейств и банковским продуктам"
+#~ msgstr ""
+#~ "Training programs on the main functions"
+#~ " of corporate treasury and bank "
+#~ "products"
 
