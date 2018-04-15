@@ -643,6 +643,14 @@ msgstr ""
 msgid "Все права защищены"
 msgstr "All rights reserved"
 
+#: templates/contact.html:55
+msgid "Нажимая на кнопку 'Отправить', вы даёте"
+msgstr "By pressing the send button you authorise us"
+
+#: templates/contact.html:55
+msgid " согласие на обработку персональных данных"
+msgstr " to process your personal information"
+
 #~ msgid ""
 #~ "Руководство международным кластером (8 стран)"
 #~ " и многонациональными командами"

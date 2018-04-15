@@ -587,3 +587,11 @@ msgstr ""
 #: templates/base.html:126
 msgid "Все права защищены"
 msgstr ""
+
+#: templates/contact.html:55
+msgid "Нажимая на кнопку 'Отправить', вы даёте"
+msgstr ""
+
+#: templates/contact.html:55
+msgid " согласие на обработку персональных данных"
+msgstr ""
