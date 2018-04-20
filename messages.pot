@@ -530,18 +530,6 @@ msgstr ""
 msgid "АКТУАЛЬНО"
 msgstr ""
 
-#: templates/index.html:150
-msgid "Ассоциация корпоративных казначеев (Россия)"
-msgstr ""
-
-#: templates/index.html:154
-msgid "Европейская Ассоциация корпоративных казначеев"
-msgstr ""
-
-#: templates/index.html:158
-msgid "Международная группа Ассоциаций Казначеев"
-msgstr ""
-
 #: templates/index.html:167
 msgid "АССОЦИАЦИИ КОРПОРАТИВНЫХ КАЗНАЧЕЕВ"
 msgstr ""
@@ -565,6 +553,19 @@ msgstr ""
 #: templates/base.html:126
 msgid "Все права защищены"
 msgstr ""
+
+#: templates/index.html:153
+msgid "Ассоциация Корпоративных Казначеев (Россия)"
+msgstr ""
+
+#: templates/index.html:156
+msgid "Европейская Ассоциация Корпоративных Казначеев"
+msgstr ""
+
+#: templates/index.html:159
+msgid "Международная Группа Ассоциаций Казначеев"
+msgstr ""
+
 
 #: templates/contact.html:55
 msgid "Нажимая на кнопку 'Отправить', вы даёте"

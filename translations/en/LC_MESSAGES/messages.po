@@ -592,18 +592,6 @@ msgstr "Phone"
 msgid "АКТУАЛЬНО"
 msgstr "INSIGHTS"
 
-#: templates/index.html:150
-msgid "Ассоциация корпоративных казначеев (Россия)"
-msgstr "Association of Corporate Tresurers (Russia)"
-
-#: templates/index.html:154
-msgid "Европейская Ассоциация корпоративных казначеев"
-msgstr "The European Association of Corporate Treasurers"
-
-#: templates/index.html:158
-msgid "Международная группа Ассоциаций Казначеев"
-msgstr "The International Group of Treasury Associations"
-
 #: templates/index.html:167
 msgid "АССОЦИАЦИИ КОРПОРАТИВНЫХ КАЗНАЧЕЕВ"
 msgstr "ASSOCIATIONS OF CORPORATE TREASURERS"
@@ -630,6 +618,18 @@ msgstr ""
 msgid "Все права защищены"
 msgstr "All rights reserved"
 
+#: templates/index.html:153
+msgid "Ассоциация Корпоративных Казначеев (Россия)"
+msgstr "Association of Corporate Tresurers (Russia)"
+
+#: templates/index.html:156
+msgid "Европейская Ассоциация Корпоративных Казначеев"
+msgstr "The European Association of Corporate Treasurers"
+
+#: templates/index.html:159
+msgid "Международная Группа Ассоциаций Казначеев"
+msgstr "The International Group of Treasury Associations"
+
 #: templates/contact.html:55
 msgid "Нажимая на кнопку 'Отправить', вы даёте"
 msgstr "By pressing the send button you authorise us"
@@ -641,93 +641,4 @@ msgstr " to process your personal information"
 #: templates/services.html:55
 msgid "ИЗУЧЕНИЕ СПЕЦИФИКИ КОМПАНИИ"
 msgstr "RESEARCH ON THE COMPANY SPECIFICS"
-
-#~ msgid ""
-#~ "Руководство международным кластером (8 стран)"
-#~ " и многонациональными командами"
-#~ msgstr "Managed international cluster (8 countries) and multinational teams"
-
-#~ msgid "Работа с ведущими российскими и международными компаниями"
-#~ msgstr "Worked with leading Russian and international companies"
-
-#~ msgid "Руководство департаментами маркетинга и продаж финансовых инструментов"
-#~ msgstr "Managed financial market products sales and marketing departments"
-
-#~ msgid ""
-#~ "руководство международным кластером (8 стран)"
-#~ " и многонациональными командами"
-#~ msgstr ""
-
-#~ msgid "руководство департаментами маркетинга и продаж финансовых инструментов"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Специализация: продукты финансового рынка, "
-#~ "управление финансовыми рисками, кредитование с"
-#~ " иcпользованием акций и др. ценных "
-#~ "бумаг"
-#~ msgstr ""
-#~ "Specialization: financial market products, "
-#~ "financial risks management, securities "
-#~ "financing"
-
-#~ msgid ""
-#~ "Мы не будем Вам советовать "
-#~ "«инновационные» решения, если они Вам "
-#~ "реально не нужны."
-#~ msgstr ""
-#~ "We will not push you to implement"
-#~ " innovative solutions if they are not"
-#~ " RIGHT for you."
-
-#~ msgid "Н"
-#~ msgstr "O"
-
-#~ msgid "аша команда"
-#~ msgstr "ur team"
-
-#~ msgid ""
-#~ "Мы помогаем компаниям построить современное"
-#~ " казначейство, т.е.  систему управления "
-#~ "денежными потоками, финансовыми рисками и "
-#~ "оборотным капиталом, эфективно использующую "
-#~ "финансовый и человеческий капитал, с "
-#~ "учётом специфики компании и на основе"
-#~ " лучших международных и российских практик"
-#~ msgstr ""
-#~ "WE HELP COMPANIES TO BUILD A "
-#~ "MODERN TREASURY IN ORDER TO EFFICIENTLY"
-#~ " MANAGE CASH FLOWS, FINANCIAL RISKS "
-#~ "AND WORKING CAPITAL AND EFFECTIVELY "
-#~ "DEPLOY FINANCIAL AND HUMAN CAPITAL "
-#~ "TAKING INTO ACCOUNT THE COMPANY "
-#~ "SPECIFICS AND THE BEST INTERNATIONAL AND"
-#~ " RUSSIAN PRACTICES"
-
-#~ msgid "Тренинги по основным функциям казначейств и банковским продуктам"
-#~ msgstr ""
-#~ "Training programs on the main functions"
-#~ " of corporate treasury and bank "
-#~ "products"
-
-#~ msgid "Отзыв"
-#~ msgstr "Request"
-
-#~ msgid ""
-#~ "От имени Ассоциации корпоративных казначеев"
-#~ " я хотел бы поблагодарить Вас за "
-#~ "успешное проведение семинара на тему "
-#~ "«Управление денежными потоками и ликвидностью»"
-#~ " для казначейств компаний, входящих в "
-#~ "ГК «Ростех»"
-#~ msgstr ""
-
-#~ msgid "Владимир Козинец"
-#~ msgstr ""
-
-#~ msgid "Президент"
-#~ msgstr ""
-
-#~ msgid "Ассоциации корпоративных казначеев"
-#~ msgstr ""
 
