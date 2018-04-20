@@ -97,12 +97,6 @@ msgstr ""
 "Specialization: transaction banking products, treasury, payment factories"
 " and shared service centers development advisory, risk management"
 
-#: templates/about.html:58
-msgid "24 года в ведущих международных банках: Ситибанк, АБН АМРО, Юникредит"
-msgstr ""
-"24 years in leading international banks: ABN AMRO Bank, Citibank, "
-"Unicredit"
-
 #: templates/about.html:59
 msgid ""
 "Руководство международным кластером (8 стран) и многонациональными "
@@ -124,10 +118,6 @@ msgid ""
 msgstr ""
 "Specialization: financial market products, financial risks management, "
 "securities financing"
-
-#: templates/about.html:75
-msgid "24 года в ведущих международных банках: Ситибанк, ИНГ Банк, Юникредит"
-msgstr "24 years in leading international banks: ING, Citibank, Unicredit"
 
 #: templates/about.html:76
 msgid "Руководство департаментами маркетинга и продаж финансовых инструментов"
@@ -168,6 +158,10 @@ msgstr ""
 #: templates/contact.html:35
 msgid "Имя"
 msgstr "Name"
+
+#: templates/services.html:119
+msgid "банк-клиент, host-to- host, SWIFT и др."
+msgstr ""
 
 #: templates/contact.html:39
 msgid "Email адрес"
@@ -275,32 +269,25 @@ msgstr ""
 msgid "Наша команда"
 msgstr "Our team"
 
+#: templates/about.html:59
+msgid ""
+"24 года в ведущих международных банках: Ситибанк, АБН АМРО, ММБ (сейчас -"
+" Юникредит)"
+msgstr ""
+"24 years in leading international banks: Citibank, ABN AMRO, IMB (now - "
+"Unicredit )"
+
+#: templates/about.html:77
+msgid ""
+"24 года в ведущих международных банках: Ситибанк, ИНГ Банк, ММБ (сейчас -"
+" Юникредит)"
+msgstr ""
+"24 years in leading international banks: ING, Citibank, IMB (now - "
+"Unicredit)"
+
 #: templates/index.html:184
 msgid "Индикаторы рынков"
 msgstr "Market Indicators"
-
-#: templates/index.html:206
-msgid "Отзыв"
-msgstr "Request"
-
-#: templates/index.html:211
-msgid ""
-"От имени Ассоциации корпоративных казначеев я хотел бы поблагодарить Вас "
-"за успешное проведение семинара на тему «Управление денежными потоками и "
-"ликвидностью» для казначейств компаний, входящих в ГК «Ростех»"
-msgstr ""
-
-#: templates/index.html:217
-msgid "Владимир Козинец"
-msgstr ""
-
-#: templates/index.html:218
-msgid "Президент"
-msgstr ""
-
-#: templates/index.html:219
-msgid "Ассоциации корпоративных казначеев"
-msgstr ""
 
 #: templates/services.html:20
 msgid "Наши"
@@ -328,9 +315,9 @@ msgstr "Research on the company specifics"
 
 #: templates/services.html:43
 msgid ""
-"ЭКОСИСТЕМА (отрасль, география, клиенты, поставщики, законодательство "
-"ит.п.)"
-msgstr "ECOSYSTEM (industry, geography, customers, suppliers, legislation etc.)"
+"ЭКОСИСТЕМА (отрасль, география, клиенты, поставщики, законодательство и "
+"т.п.)"
+msgstr "ECOSYSTEM (industry, geography, customers, suppliers, legislation, etc.)"
 
 #: templates/services.html:46
 msgid ""
@@ -384,7 +371,7 @@ msgstr "cash concentration"
 
 #: templates/services.html:65
 msgid "физический и виртуальный пулинг"
-msgstr "physical and Notional Pooling"
+msgstr "physical and notional pooling"
 
 #: templates/services.html:66
 msgid "инвестирование"
@@ -541,9 +528,9 @@ msgstr "Policies and procedures DEVELOPMENT"
 msgid "ДОКУМЕНТОВ"
 msgstr " "
 
-#: templates/services.html:152
-msgid "а также"
-msgstr "and"
+#: templates/services.html:157
+msgid ", а также"
+msgstr " "
 
 #: templates/services.html:152
 msgid "СОПРОВОЖДЕНИЕ ВНЕДРЕНИЯ"
@@ -619,7 +606,7 @@ msgstr "The International Group of Treasury Associations"
 
 #: templates/index.html:167
 msgid "АССОЦИАЦИИ КОРПОРАТИВНЫХ КАЗНАЧЕЕВ"
-msgstr "ASSOCIATION OF CORPORATE TREASURERS"
+msgstr "ASSOCIATIONS OF CORPORATE TREASURERS"
 
 #: templates/base.html:111
 msgid "ИНДИКАТОРЫ РЫНКОВ"
@@ -651,6 +638,10 @@ msgstr "By pressing the send button you authorise us"
 msgid " согласие на обработку персональных данных"
 msgstr " to process your personal information"
 
+#: templates/services.html:55
+msgid "ИЗУЧЕНИЕ СПЕЦИФИКИ КОМПАНИИ"
+msgstr "RESEARCH ON THE COMPANY SPECIFICS"
+
 #~ msgid ""
 #~ "Руководство международным кластером (8 стран)"
 #~ " и многонациональными командами"
@@ -662,30 +653,9 @@ msgstr " to process your personal information"
 #~ msgid "Руководство департаментами маркетинга и продаж финансовых инструментов"
 #~ msgstr "Managed financial market products sales and marketing departments"
 
-#~ msgid "24 года в ведущих международных банках: Ситибанк, ИНГ Банк, Юникредит"
-#~ msgstr "24 years in leading international banks: Citibank, ABN AMRO, IMB "
-
-#~ msgid "работа с ведущими российскими и международными компаниями"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "24 года в ведущих международных банках:"
-#~ " Ситибанк, АБН АМРО, ММБ (теперь "
-#~ "Юникредит)"
-#~ msgstr ""
-#~ "24 years in leading international banks:"
-#~ " Citibank, ABN AMRO, IMB (now "
-#~ "Unicredit)"
-
 #~ msgid ""
 #~ "руководство международным кластером (8 стран)"
 #~ " и многонациональными командами"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "24 года в ведущих международных банках:"
-#~ " Ситибанк, ИНГ Банк, ММБ (теперь "
-#~ "Юникредит)"
 #~ msgstr ""
 
 #~ msgid "руководство департаментами маркетинга и продаж финансовых инструментов"
@@ -739,4 +709,25 @@ msgstr " to process your personal information"
 #~ "Training programs on the main functions"
 #~ " of corporate treasury and bank "
 #~ "products"
+
+#~ msgid "Отзыв"
+#~ msgstr "Request"
+
+#~ msgid ""
+#~ "От имени Ассоциации корпоративных казначеев"
+#~ " я хотел бы поблагодарить Вас за "
+#~ "успешное проведение семинара на тему "
+#~ "«Управление денежными потоками и ликвидностью»"
+#~ " для казначейств компаний, входящих в "
+#~ "ГК «Ростех»"
+#~ msgstr ""
+
+#~ msgid "Владимир Козинец"
+#~ msgstr ""
+
+#~ msgid "Президент"
+#~ msgstr ""
+
+#~ msgid "Ассоциации корпоративных казначеев"
+#~ msgstr ""
 

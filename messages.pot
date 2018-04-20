@@ -84,11 +84,6 @@ msgid ""
 "                                    управление рисками"
 msgstr ""
 
-#: templates/about.html:58
-msgid ""
-"24 года в ведущих международных банках: Ситибанк, АБН АМРО, Юникредит"
-msgstr ""
-
 #: templates/about.html:59
 msgid ""
 "Руководство международным кластером (8 стран) и многонациональными "
@@ -109,10 +104,6 @@ msgid ""
 "рисками, кредитование с иcпользованием акций и других ценных бумаг"
 msgstr ""
 
-#: templates/about.html:75
-msgid ""
-"24 года в ведущих международных банках: Ситибанк, ИНГ Банк, Юникредит"
-msgstr ""
 
 #: templates/about.html:76
 msgid "Руководство департаментами маркетинга и продаж финансовых инструментов"
@@ -150,6 +141,10 @@ msgstr ""
 
 #: templates/contact.html:35
 msgid "Имя"
+msgstr ""
+
+#: templates/services.html:119
+msgid "банк-клиент, host-to- host, SWIFT и др."
 msgstr ""
 
 #: templates/contact.html:39
@@ -242,31 +237,16 @@ msgstr ""
 msgid "Наша команда"
 msgstr ""
 
+#: templates/about.html:59
+msgid "24 года в ведущих международных банках: Ситибанк, АБН АМРО, ММБ (сейчас - Юникредит)"
+msgstr ""
+
+#: templates/about.html:77
+msgid "24 года в ведущих международных банках: Ситибанк, ИНГ Банк, ММБ (сейчас - Юникредит)"
+msgstr ""
+
 #: templates/index.html:184
 msgid "Индикаторы рынков"
-msgstr ""
-
-#: templates/index.html:206
-msgid "Отзыв"
-msgstr ""
-
-#: templates/index.html:211
-msgid ""
-"От имени Ассоциации корпоративных казначеев я хотел бы поблагодарить Вас "
-"за успешное проведение семинара на тему «Управление денежными потоками и "
-"ликвидностью» для казначейств компаний, входящих в ГК «Ростех»"
-msgstr ""
-
-#: templates/index.html:217
-msgid "Владимир Козинец"
-msgstr ""
-
-#: templates/index.html:218
-msgid "Президент"
-msgstr ""
-
-#: templates/index.html:219
-msgid "Ассоциации корпоративных казначеев"
 msgstr ""
 
 #: templates/services.html:20
@@ -286,9 +266,7 @@ msgid "Изучение специфики компании"
 msgstr ""
 
 #: templates/services.html:43
-msgid ""
-"ЭКОСИСТЕМА (отрасль, география, клиенты, поставщики, законодательство "
-"ит.п.)"
+msgid "ЭКОСИСТЕМА (отрасль, география, клиенты, поставщики, законодательство и т.п.)"
 msgstr ""
 
 #: templates/services.html:46
@@ -490,8 +468,8 @@ msgstr ""
 msgid "ДОКУМЕНТОВ"
 msgstr ""
 
-#: templates/services.html:152
-msgid "а также"
+#: templates/services.html:157
+msgid ", а также"
 msgstr ""
 
 #: templates/services.html:152
@@ -594,4 +572,8 @@ msgstr ""
 
 #: templates/contact.html:55
 msgid " согласие на обработку персональных данных"
+msgstr ""
+
+#: templates/services.html:55
+msgid "ИЗУЧЕНИЕ СПЕЦИФИКИ КОМПАНИИ"
 msgstr ""
