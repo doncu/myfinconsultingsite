@@ -6,7 +6,7 @@ if __name__ == '__main__':
 
     parser.add_argument(
         '--host',
-        default='0.0.0.0',
+        default='127.0.0.1',
         help='Host for run'
     )
 

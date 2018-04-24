@@ -34,6 +34,10 @@ msgstr "Services"
 msgid "Контакты"
 msgstr "Contacts"
 
+#: application/const.py:26 templates/base.html:105
+msgid "Статьи"
+msgstr "Articles"
+
 #: templates/about.html:23
 msgid "Почему"
 msgstr "Why"

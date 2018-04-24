@@ -40,7 +40,7 @@ class Catalog(AdminModelView):
         title=dict(label='Название статьи', validators=[validators.DataRequired()]),
         annotation=dict(label='Текст статьи', validators=[validators.DataRequired()])
     )
-    form_overrides = dict(title=wtforms.StringField, glyphicon=wtforms.StringField, annotation=fields.CKTextAreaField)
+    form_overrides = dict(title=wtforms.StringField, annotation=fields.CKTextAreaField)
 
     def on_model_change(self, form, model, is_created):
         super().on_model_change(form, model, is_created)

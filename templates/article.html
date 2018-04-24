@@ -1,20 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>{{ article.title }}</title>
-</head>
-<body>
-{% for chunk in chunks(article(), 5) %}
-            <div class="service-blocks row">
-                {% for service in chunk %}
-                <div class="col-sm-4">
-                    <div class="row inner">
-                            <h3 class="this-title">{{ article.title }}</h3>
-                    </div>
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <section id="inner-headline">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="pageTitle">{{ gettext('Статьи')}}</h2>
                 </div>
-                {% endfor %}
             </div>
-        {% endfor %}
-</body>
-</html>
+        </div>
+	</section>
+
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="about-logo">
+                <h3 style="text-align: center">{{ article.title }}</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+             <div class="testimonials">
+                <div class="active item">
+                  <blockquote>
+                      <p>
+                        {{ article.annotation | safe }}
+                      </p>
+                  </blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+{% endblock %}

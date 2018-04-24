@@ -7,7 +7,8 @@ from application import models
 
 @app.route('/', endpoint='index')
 def index_view():
-    return render_template('index.html', alias='index')
+    articles = db.session.query(models.Articles).all()
+    return render_template('index.html', alias='index', articles=articles)
 
 
 @app.route('/about/', endpoint='about')

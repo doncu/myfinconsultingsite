@@ -141,13 +141,20 @@
 								<div class="block-heading-two">
 									<h3><span>{{ gettext('АКТУАЛЬНО') }}</span></h3>
 								</div>
+                                <ul>
+                                    {% for item in articles %}
+                                        <li>
+                                            <p><a href="/article/{{ item.id }}" target="_blank">{{ item.title }}</a></p>
+                                        </li>
+                                    {% endfor %}
+                                </ul>
 							</div>
 
                             <div class="col-md-6">
 								<div class="block-heading-two">
 									<h3><span>{{ gettext('АССОЦИАЦИИ КОРПОРАТИВНЫХ КАЗНАЧЕЕВ')}}</span></h3>
 								</div>
-                                <div class="col-md-offset-2">
+                                <div class="col-md-offset-1">
 
                                     <ul>
                                       <li>
