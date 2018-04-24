@@ -143,10 +143,6 @@ msgstr ""
 msgid "Имя"
 msgstr ""
 
-#: templates/services.html:119
-msgid "банк-клиент, host-to- host, SWIFT и др."
-msgstr ""
-
 #: templates/contact.html:39
 msgid "Email адрес"
 msgstr ""
@@ -413,12 +409,13 @@ msgstr ""
 msgid "системы распределенного реестра (блокчейн)"
 msgstr ""
 
-#: templates/services.html:118
-msgid "каналы связи с банками"
-msgstr ""
 
 #: templates/services.html:119
 msgid "торговые системы"
+msgstr ""
+
+#: templates/services.html:118
+msgid "каналы связи с банками (банк-клиент, host-to- host, SWIFT и др.)"
 msgstr ""
 
 #: templates/services.html:120

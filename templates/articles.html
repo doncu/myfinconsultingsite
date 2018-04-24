@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Статьи</title>
+</head>
+<body>
+
+{% for chunk in chunks(articles, 3) %}
+    <div class="row">
+        {% for article in chunk %}
+        <div class="col-sm-4">
+            <div class="row inner">
+                    {{ article.title }}
+                    {{ article.annotation }}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+{% endfor %}
+
+</body>
+</html>

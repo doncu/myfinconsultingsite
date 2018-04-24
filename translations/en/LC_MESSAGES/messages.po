@@ -159,10 +159,6 @@ msgstr ""
 msgid "Имя"
 msgstr "Name"
 
-#: templates/services.html:119
-msgid "банк-клиент, host-to- host, SWIFT и др."
-msgstr ""
-
 #: templates/contact.html:39
 msgid "Email адрес"
 msgstr "Email"
@@ -471,13 +467,13 @@ msgstr "cloud"
 msgid "системы распределенного реестра (блокчейн)"
 msgstr "distributed ledger (blockchain)"
 
-#: templates/services.html:118
-msgid "каналы связи с банками"
-msgstr "connectivity with banks"
-
 #: templates/services.html:119
 msgid "торговые системы"
 msgstr "trading platforms"
+
+#: templates/services.html:118
+msgid "каналы связи с банками (банк-клиент, host-to- host, SWIFT и др.)"
+msgstr "connectivity with banks (electronic banking, host-to-host, SWIFT, etc)"
 
 #: templates/services.html:120
 msgid "информационные системы"
@@ -641,4 +637,10 @@ msgstr " to process your personal information"
 #: templates/services.html:55
 msgid "ИЗУЧЕНИЕ СПЕЦИФИКИ КОМПАНИИ"
 msgstr "RESEARCH ON THE COMPANY SPECIFICS"
+
+#~ msgid "банк-клиент, host-to- host, SWIFT и др."
+#~ msgstr ""
+
+#~ msgid "каналы связи с банками"
+#~ msgstr "connectivity with banks"
 

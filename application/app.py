@@ -4,26 +4,18 @@ from flask import request
 from flask_babel import Babel
 from flask_admin import Admin
 
-from flask_recaptcha import ReCaptcha
-
 import config
 from application import db
 from application import const
-from application.admin import index
+from application.common import utils
 
 app = Flask(__name__, template_folder=config.TEMPLATE_PATH, static_folder=config.STATIC_PATH)
 app.config.from_object('config')
-admin = Admin(
-    app,
-    name='admin',
-    index_view=index.AdminIndexView(url='/admin/'),
-    base_template='admin/master.html',
-    template_mode='bootstrap3'
-)
+admin = Admin(app, name='admin')
 babel = Babel(app)
-recaptcha = ReCaptcha(app)
 app.add_template_global(const.MENU, 'MENU')
 app.add_template_global(const.YEAR, name='YEAR')
+app.add_template_global(utils.chunks, name='chunks')
 
 
 

@@ -1,6 +1,8 @@
 from flask import render_template, request, redirect, url_for
-from application import email
+from application.common import email
 from application.app import app
+from application import db
+from application import models
 
 
 @app.route('/', endpoint='index')
@@ -28,12 +30,18 @@ def contacts_view():
     return render_template("contact.html", alias='contacts')
 
 
-@app.route('/portfolio/', endpoint='portfolio')
-def portfolio_view():
-    return render_template('portfolio.html', alias='portfolio')
-
-
 @app.route('/services/', endpoint='services')
 def services_view():
     return render_template('services.html', alias='services')
 
+
+@app.route('/articles/', endpoint='articles')
+def articles_view():
+    articles = db.session.query(models.Articles).all()
+    return render_template('articles.html', alias='articles', articles=articles)
+
+
+@app.route('/article/<id>')
+def article_view(id):
+    article = db.session.query(models.Articles).filter(models.Articles.id == id).first()
+    return render_template('article.html', alias='article', article=article)

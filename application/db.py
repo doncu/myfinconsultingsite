@@ -16,4 +16,4 @@ session = scoped_session(lambda: Session(autoflush=False, expire_on_commit=False
 
 def import_all():
     import application.models
-    import application.admin.models
+    import application.admin.fields

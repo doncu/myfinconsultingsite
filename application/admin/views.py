@@ -1,85 +1,51 @@
-from flask import flash
-from flask import url_for
-from flask import request
-from flask import redirect
-from flask import render_template
-
-from flask_login import login_user
-from flask_login import logout_user
-from flask_login import LoginManager
-
-from flask_admin.form import upload
+from flask_admin.contrib import sqla
 
 import wtforms
+from wtforms import validators
 
-import config
-
-from application.app import app
+from application import db
+from application.app import admin
+from application.common import utils
+from application.admin import fields
 from application import models
-from application.admin import base
-from application.admin import models as admin_models
-
-login_manager = LoginManager(app)
-login_manager.user_loader(admin_models.get_user)
-login_manager.login_view = 'users.login'
-login_manager.login_message = 'Login success'
-login_manager.login_message_category = 'info'
 
 
-@app.route('/admin/login/', methods=['GET', 'POST'])
-def login():
-    if request.method == 'POST':
-        username = request.form['username']
-        password = request.form['password']
-
-        verify, user = admin_models.check_user(username, password)
-        if verify:
-            login_user(user)
-            return redirect('/admin/')
-        else:
-            flash('Введен неправильный логин или пароль', 'error')
-
-    return render_template('admin/login.html')
+class AdminModelView(sqla.ModelView):
+    def __init__(self, model=None, title=None, category=None, endpoint=None, url=None):
+        super().__init__(model or self.__model__, db.session, title, category, endpoint, url)
 
 
-@app.route('/admin/logout/')
-def logout():
-    logout_user()
-    return redirect(url_for('login'))
+def register(title=None, url=None, endpoint=None, **kwargs):
+    def decorator(cls):
+        view = cls(title=title, url=url, endpoint=endpoint, **kwargs)
+        cls.instance = view
+        admin.add_view(view)
+        return cls
+
+    return decorator
 
 
-@base.register(None, 'User', '/admin/users/', 'admin.user')
-class UserView(base.AdminModelView):
-    __model__ = admin_models.User
-    column_list = ('username', 'is_admin')
-    form_columns = ('username', 'password', 'is_admin')
+@register('Статьи', 'Статьи', '/admin/articles/')
+class Catalog(AdminModelView):
+    __model__ = models.Articles
 
-    form_overrides = dict(username=wtforms.StringField, is_admin=wtforms.BooleanField, password=wtforms.PasswordField)
-    column_default_sort = ('username', None)
+    create_template = 'admin/create.html'
+    edit_template = 'admin/edit.html'
 
+    column_list = ('title', 'annotation')
+    column_labels = dict(title='Заголовок', annotation='Текст статьи')
 
-# @base.register(None, 'Production', '/admin/productions/', 'admin.production')
-# class ProductionViews(base.AdminModelView):
-#     __model__ = models.Production
-#
-#     column_list = ('title', 'price', 'description', )
-#
-#     form_overrides = dict(title=wtforms.StringField, price=wtforms.DecimalField)
-#     form_extra_fields = dict(img_url=upload.ImageUploadField(base_path=config.IMG_PATH, endpoint='image'))
-
-
-@base.register(None, 'News', '/admin/news/', 'admin.news')
-class NewsView(base.AdminModelView):
-    __model__ = models.News
-
-    form_columns = ('title', 'annotation', 'img_url')
-    column_list = ('title', 'annotation', 'ctime')
-
-    form_overrides = dict(
-        title=wtforms.StringField,
-        annotation=wtforms.StringField,
+    form_columns = ('title', 'annotation')
+    form_args = dict(
+        title=dict(label='Название статьи', validators=[validators.DataRequired()]),
+        annotation=dict(label='Текст статьи', validators=[validators.DataRequired()])
     )
+    form_overrides = dict(title=wtforms.StringField, glyphicon=wtforms.StringField, annotation=fields.CKTextAreaField)
 
-    form_extra_fields = dict(img_url=upload.ImageUploadField(base_path=config.IMG_PATH, endpoint='image'))
+    def on_model_change(self, form, model, is_created):
+        super().on_model_change(form, model, is_created)
+        model.alias = utils.transliterate(model.title)
 
-    column_default_sort = ('ctime', True)
+    def get_query(self):
+        query = super().get_query()
+        return query

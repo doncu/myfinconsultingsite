@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ article.title }}</title>
+</head>
+<body>
+{% for chunk in chunks(article(), 5) %}
+            <div class="service-blocks row">
+                {% for service in chunk %}
+                <div class="col-sm-4">
+                    <div class="row inner">
+                            <h3 class="this-title">{{ article.title }}</h3>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        {% endfor %}
+</body>
+</html>
