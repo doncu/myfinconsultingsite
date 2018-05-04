@@ -11,3 +11,4 @@ class Articles(db.Base):
     ctime = sa.Column(sa.DateTime, default=dt.datetime.utcnow)
     title = sa.Column(sa.Text, nullable=False)
     annotation = sa.Column(sa.Text, nullable=False)
+
