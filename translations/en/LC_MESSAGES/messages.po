@@ -113,7 +113,7 @@ msgstr "Worked with leading Russian and international companies"
 
 #: templates/about.html:71
 msgid "Марина Завгородняя"
-msgstr "Marina Zavgorodnaya"
+msgstr "Marina Zavgorodnyaya"
 
 #: templates/about.html:74
 msgid ""
@@ -641,6 +641,10 @@ msgstr " to process your personal information"
 #: templates/services.html:55
 msgid "ИЗУЧЕНИЕ СПЕЦИФИКИ КОМПАНИИ"
 msgstr "RESEARCH ON THE COMPANY SPECIFICS"
+
+#: templates/articles.html:9
+msgid "Все статьи"
+msgstr "Articles"
 
 #~ msgid "банк-клиент, host-to- host, SWIFT и др."
 #~ msgstr ""

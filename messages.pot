@@ -579,3 +579,7 @@ msgstr ""
 #: templates/services.html:55
 msgid "ИЗУЧЕНИЕ СПЕЦИФИКИ КОМПАНИИ"
 msgstr ""
+
+#: templates/articles.html:9
+msgid "Все статьи"
+msgstr ""
