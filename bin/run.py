@@ -17,12 +17,12 @@ if __name__ == '__main__':
         help='Host for run'
     )
 
-    parser.add_argument(
-        '--no-debug',
-        dest='debug',
-        action='store_false',
-        default=True
-    )
+#    parser.add_argument(
+#        '--no-debug',
+#        dest='debug',
+#        action='store_false',
+#        default=True
+#    )
 
     args = parser.parse_args()
 
