@@ -620,7 +620,7 @@ msgstr "All rights reserved"
 
 #: templates/index.html:153
 msgid "Ассоциация Корпоративных Казначеев (Россия)"
-msgstr "Association of Corporate Tresurers (Russia)"
+msgstr "Association of Corporate Treasurers (Russia)"
 
 #: templates/index.html:156
 msgid "Европейская Ассоциация Корпоративных Казначеев"
