@@ -12,3 +12,10 @@ class Articles(db.Base):
     title = sa.Column(sa.Text, nullable=False)
     annotation = sa.Column(sa.Text, nullable=False)
 
+
+class Policies(db.Base):
+    __tablename__ = 'policies'
+
+    id = sa.Column(sa.Integer, primary_key=True)
+    title = sa.Column(sa.Text, nullable=False)
+    annotation = sa.Column(sa.Text, nullable=False)

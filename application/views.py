@@ -46,3 +46,9 @@ def articles_view():
 def article_view(id):
     article = db.session.query(models.Articles).filter(models.Articles.id == id).first()
     return render_template('article.html', alias='article', article=article)
+
+
+@app.route("/privacy_policy/", endpoint='privacy_policy')
+def privacy_policy():
+    policy = db.session.query(models.Policies).all()[0]
+    return render_template('privacy_policy.html', policy=policy)
