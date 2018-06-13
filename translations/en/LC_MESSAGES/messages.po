@@ -631,12 +631,16 @@ msgid "Международная Группа Ассоциаций Казнач
 msgstr "The International Group of Treasury Associations"
 
 #: templates/contact.html:55
-msgid "Нажимая на кнопку 'Отправить', вы даёте"
-msgstr "By pressing the send button you authorise us"
+msgid "Нажимая на кнопку 'Отправить',  я подтверждаю что ознакомилась(лся) с"
+msgstr "By pressing the “send” button I"
 
 #: templates/contact.html:55
-msgid " согласие на обработку персональных данных"
-msgstr " to process your personal information"
+msgid ""
+" Политикой в отношении обработки персональных данных и соглашаюсь с ее "
+"условиями"
+msgstr ""
+" acknowledge that I have read the Privacy Policy and that I consent to "
+"your processing my data in accordance with the Privacy Policy"
 
 #: templates/services.html:55
 msgid "ИЗУЧЕНИЕ СПЕЦИФИКИ КОМПАНИИ"
@@ -651,4 +655,10 @@ msgstr "Articles"
 
 #~ msgid "каналы связи с банками"
 #~ msgstr "connectivity with banks"
+
+#~ msgid "Нажимая на кнопку 'Отправить', вы даёте"
+#~ msgstr "By pressing the send button you authorise us"
+
+#~ msgid " согласие на обработку персональных данных"
+#~ msgstr " to process your personal information"
 
