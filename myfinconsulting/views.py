@@ -1,8 +1,9 @@
 from flask import render_template, request, redirect, url_for
-from application.common import email
-from application.app import app
-from application import db
-from application import models
+
+from myfinconsulting import db
+from myfinconsulting import models
+from myfinconsulting.app import app
+from myfinconsulting.common import email
 
 
 @app.route('/', endpoint='index')
@@ -42,9 +43,9 @@ def articles_view():
     return render_template('articles.html', alias='articles', articles=articles)
 
 
-@app.route('/article/<id>')
-def article_view(id):
-    article = db.session.query(models.Articles).filter(models.Articles.id == id).first()
+@app.route('/article/<oid>')
+def article_view(oid):
+    article = db.session.query(models.Articles).filter(models.Articles.id == oid).first()
     return render_template('article.html', alias='article', article=article)
 
 

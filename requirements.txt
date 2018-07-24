@@ -1,8 +1,7 @@
-uwsgidecorators
 flask==0.12
-flask-admin==1.5.0
-flask-login==0.4.0
-sqlalchemy==1.1.9
-passlib==1.7.1
-Pillow==4.3.0
+flask-babel==0.11.2
+click==6.7
 uwsgi==2.0.15
+sqlalchemy==1.2.10
+flask-admin==1.5.1
+sqlalchemy-i18n==1.0.3

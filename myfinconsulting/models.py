@@ -1,7 +1,7 @@
 import datetime as dt
 import sqlalchemy as sa
 
-from application import db
+from myfinconsulting import db
 
 
 class Articles(db.Base):

@@ -3,11 +3,11 @@ from flask_admin.contrib import sqla
 import wtforms
 from wtforms import validators
 
-from application import db
-from application.app import admin
-from application.common import utils
-from application.admin import fields
-from application import models
+from myfinconsulting import db
+from myfinconsulting import models
+from myfinconsulting.app import admin
+from myfinconsulting.common import utils
+from myfinconsulting.admin import fields
 
 
 class AdminModelView(sqla.ModelView):
