@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <section id="inner-headline">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<h2 class="pageTitle">{{ gettext('Контакты')}}</h2>
+			</div>
+		</div>
+	</div>
+	</section>
+
+	<section id="content">
+
+	<div class="container">
+		<div class="row">
+            <div class="col-md-12">
+                <div class="about-logo">
+                    <h3 style="text-align: center">{{ gettext('Будем рады оказать Вам')}}<span class="color"> {{ gettext('помощь')}}!</span></h3>
+                    <p style="margin-top: -1%; text-align: center">
+                        {{ gettext('Вы можете связаться с нами по указанным ниже телефонам, электронной почте или заполнив форму обратной связи')}}.
+                    </p>
+                </div>
+            </div>
+        </div>
+	<div class="row" style="margin-bottom: 5%">
+
+            <div class="col-md-6">
+                    <p> </p>
+                   <!-- Form itself -->
+                    <form method="post" id="contactForm" novalidate>
+                      <div class="form-group">
+                        <label for="">{{ gettext('Имя')}}</label>
+                        <input type="text" class="form-control" name="name" placeholder={{ gettext('Имя')}}>
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">{{ gettext('Email адрес')}}</label>
+                        <input type="email" class="form-control" name="email" placeholder={{ gettext('Email адрес')}} required>
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">{{ gettext('Контактный телефон')}}</label>
+                        <input type="tel" class="form-control" name="tel" placeholder={{ gettext('Телефон')}} required>
+                      </div>
+                      <div class="form-group">
+                        <label for="">{{ gettext('Компания')}}</label>
+                        <input type="text" class="form-control" name="company" placeholder={{ gettext('Компания')}} required>
+                      </div>
+                      <div class="form-group">
+                          <textarea class="form-control" rows="3" name="text" title=""></textarea>
+                      </div>
+                      {#  <div class="g-recaptcha" style="margin-top: 2%; margin-bottom: 2%" data-sitekey="6LczwFEUAAAAACXpO7XNczct8Y0SdzFTrVHFYQzi"></div> #}
+                      <div class="form-group">
+                        <input type="checkbox" id="politics" style="opacity: 1; position: static; margin-right: 5px" onclick="check();" value="" autocomplete="off"/>{{ gettext("Нажимая на кнопку 'Отправить',  я подтверждаю что ознакомилась(лся) с")}}<a href="/privacy_policy/" target="_blank">{{ gettext(' Политикой в отношении обработки персональных данных и соглашаюсь с ее условиями')}}.</a>
+                      </div>
+
+                      <button type="submit" name="submit" disabled="" onclick="alert('Сообщение отправлено')" class="btn btn-default">{{ gettext('Отправить')}}</button>
+                    </form>
+                    <script>
+                        function check() {
+                        var submit = document.getElementsByName('submit')[0];
+                        if (document.getElementById('politics').checked)
+                        submit.disabled = '';
+                        else
+                        submit.disabled = 'disabled';
+                        }
+                    </script>
+                </div>
+            <div class="col-md-6">
+                <img class="responsive-img" src="{{ url_for ('static', filename='img/contact_logo.png')}}">
+            </div>
+
+
+{#                <div class="col-md-6">#}
+{#                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2245.1722627896215!2d37.618806!3d55.7555097!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a5a7e43127d%3A0x4951e6ca811b4597!2z0JPQvtGB0YPQtNCw0YDRgdGC0LLQtdC90L3Ri9C5INC40YHRgtC-0YDQuNGH0LXRgdC60LjQuSDQvNGD0LfQtdC5!5e0!3m2!1sru!2sru!4v1510916766773" width="600" height="450" frameborder="0" style="width: 100%; border:0" allowfullscreen></iframe>#}
+{#                </div>#}
+            </div>
+	</div>
+	</section>
+
+{% endblock %}

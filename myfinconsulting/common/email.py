@@ -1,8 +1,10 @@
-from email.mime.text import MIMEText
-from flask import render_template
-import functools
 import smtplib
-from config import SMTP_SERVER, SMTP_SENDER, SMTP_PASS, SMTP_RECEIVER, SMTP_PORT
+import functools
+from email.mime.text import MIMEText
+
+from flask import render_template
+
+from myfinconsulting import config
 
 try:
     import uwsgi
@@ -21,10 +23,10 @@ def send_mail(template, **context):
     email_string = render_template(template, **context)
     msg = MIMEText(email_string, 'html')
     msg['Subject'] = 'Новое обращение с сайта'
-    msg['From'] = SMTP_SENDER
-    msg['To'] = SMTP_RECEIVER
+    msg['From'] = config.SMTP_SENDER
+    msg['To'] = config.SMTP_RECEIVER
 
-    smtp = smtplib.SMTP_SSL(host=SMTP_SERVER, port=SMTP_PORT)
-    smtp.login(SMTP_SENDER, SMTP_PASS)
+    smtp = smtplib.SMTP_SSL(host=config.SMTP_SERVER, port=config.SMTP_PORT)
+    smtp.login(config.SMTP_SENDER, config.SMTP_PASS)
     smtp.send_message(msg)
     smtp.quit()

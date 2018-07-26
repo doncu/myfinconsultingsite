@@ -1,13 +1,17 @@
-from flask import render_template, request, redirect, url_for
-from application.common import email
-from application.app import app
-from application import db
-from application import models
+import os
+import imghdr
+
+from flask import render_template, request, redirect, url_for, send_file
+
+from myfinconsulting import db
+from myfinconsulting import models
+from myfinconsulting.app import app
+from myfinconsulting.common import email
 
 
 @app.route('/', endpoint='index')
 def index_view():
-    articles = db.session.query(models.Articles).all()
+    articles = db.session.query(models.Article).all()
     return render_template('index.html', alias='index', articles=articles)
 
 
@@ -38,17 +42,24 @@ def services_view():
 
 @app.route('/articles/', endpoint='articles')
 def articles_view():
-    articles = db.session.query(models.Articles).all()
+    articles = db.session.query(models.Article).all()
     return render_template('articles.html', alias='articles', articles=articles)
 
 
-@app.route('/article/<id>')
-def article_view(id):
-    article = db.session.query(models.Articles).filter(models.Articles.id == id).first()
+@app.route('/article/<oid>')
+def article_view(oid):
+    article = db.session.query(models.Article).filter(models.Article.id == oid).first()
     return render_template('article.html', alias='article', article=article)
 
 
-@app.route("/privacy_policy/", endpoint='privacy_policy')
+@app.route("/privacy-policy/", endpoint='privacy_policy')
 def privacy_policy():
-    policy = db.session.query(models.Policies).all()[0]
+    policy = db.session.query(models.Policie).first()
     return render_template('privacy_policy.html', policy=policy)
+
+
+@app.route('/img/<filename>', endpoint='image')
+def image_view(filename):
+    full_path = os.path.join(app.config['IMG_PATH'], filename)
+    type_ = imghdr.what(full_path)
+    return send_file(full_path, mimetype='image/{}'.format(type_))
