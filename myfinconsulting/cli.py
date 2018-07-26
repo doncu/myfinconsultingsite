@@ -17,7 +17,7 @@ def cli(debug):
     os.environ['FLASK_DEBUG'] = '1' if debug else '0'
 
 
-@cli.command()
+@cli.command('init-db')
 @click.option('--db-uri', help='Path where create db')
 def init_db(db_uri):
     import myfinconsulting.models

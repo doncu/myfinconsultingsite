@@ -1,12 +1,15 @@
+import os
+
+from flask_admin.form import upload
 from flask_admin.contrib import sqla
 
 import wtforms
 from wtforms import validators
 
 from myfinconsulting import db
+from myfinconsulting import config
 from myfinconsulting import models
 from myfinconsulting.app import admin
-from myfinconsulting.common import utils
 from myfinconsulting.admin import fields
 
 
@@ -25,53 +28,106 @@ def register(title=None, url=None, endpoint=None, **kwargs):
     return decorator
 
 
-@register('Статьи', 'Статьи', '/admin/articles/')
-class Catalog(AdminModelView):
-    __model__ = models.Articles
+@register('Статьи', 'Статьи', '/admin/article/')
+class AdminArticlesView(AdminModelView):
+    __model__ = models.Article
 
     create_template = 'admin/create.html'
     edit_template = 'admin/edit.html'
 
-    column_list = ('title', 'annotation')
-    column_labels = dict(title='Заголовок', annotation='Текст статьи')
+    column_list = ('title_ru', 'title_en')
+    column_labels = dict(title_ru='Заголовок на русском', title_en='Заголовок на английском')
 
-    form_columns = ('title', 'annotation')
+    form_columns = ('title_ru', 'title_en', 'annotation_ru', 'annotation_en')
     form_args = dict(
-        title=dict(label='Название статьи', validators=[validators.DataRequired()]),
-        annotation=dict(label='Текст статьи', validators=[validators.DataRequired()])
+        title_ru=dict(label='Русское название', validators=[validators.DataRequired()]),
+        title_en=dict(label='Английское название', validators=[validators.DataRequired()]),
+        annotation_ru=dict(label='Русский текст', validators=[validators.DataRequired()]),
+        annotation_en=dict(label='Английский текст', validators=[validators.DataRequired()])
     )
-    form_overrides = dict(title=wtforms.StringField, annotation=fields.CKTextAreaField)
-
-    def on_model_change(self, form, model, is_created):
-        super().on_model_change(form, model, is_created)
-        model.alias = utils.transliterate(model.title)
-
-    def get_query(self):
-        query = super().get_query()
-        return query
+    form_overrides = dict(
+        title_ru=wtforms.StringField,
+        title_en=wtforms.StringField,
+        annotation_en=fields.CKTextAreaField,
+        annotation_ru=fields.CKTextAreaField
+    )
 
 
 @register('Политика', 'Политика', '/admin/policy/')
-class Catalog(AdminModelView):
-    __model__ = models.Policies
+class AdminPoliciesView(AdminModelView):
+    __model__ = models.Policie
 
     create_template = 'admin/create.html'
     edit_template = 'admin/edit.html'
 
-    column_list = ('title', 'annotation')
-    column_labels = dict(title='Заголовок', annotation='Текст')
+    column_list = ('title_ru', 'title_en')
+    column_labels = dict(title_ru='Заголовок на русском', title_en='Заголовок на английском')
 
-    form_columns = ('title', 'annotation')
+    form_columns = ('title_ru', 'title_en', 'annotation_ru', 'annotation_en')
     form_args = dict(
-        title=dict(label='Название политики', validators=[validators.DataRequired()]),
-        annotation=dict(label='Текст политики', validators=[validators.DataRequired()])
+        title_ru=dict(label='Русское название', validators=[validators.DataRequired()]),
+        title_en=dict(label='Английское название', validators=[validators.DataRequired()]),
+        annotation_ru=dict(label='Русский текст', validators=[validators.DataRequired()]),
+        annotation_en=dict(label='Английский текст', validators=[validators.DataRequired()])
     )
-    form_overrides = dict(title=wtforms.StringField, annotation=fields.CKTextAreaField)
+    form_overrides = dict(
+        title_ru=wtforms.StringField,
+        title_en=wtforms.StringField,
+        annotation_en=fields.CKTextAreaField,
+        annotation_ru=fields.CKTextAreaField
+    )
 
-    def on_model_change(self, form, model, is_created):
-        super().on_model_change(form, model, is_created)
-        model.alias = utils.transliterate(model.title)
+
+@register('Группы сервисов', 'Группы сервисов', '/admin/service-group/')
+class AdminServiceGroupView(AdminModelView):
+    __model__ = models.ServiceGroup
+
+    create_template = 'admin/create.html'
+    edit_template = 'admin/edit.html'
+
+    column_list = ('title_ru', 'title_en', 'order')
+    column_labels = dict(title_ru='Заголовок на русском', title_en='Заголовок на английском', order='Порядковый номер')
+
+    form_columns = ('title_ru', 'title_en', 'order', 'icon')
+    form_args = dict(
+        title_ru=dict(label='Русское название', validators=[validators.DataRequired()]),
+        title_en=dict(label='Английское название', validators=[validators.DataRequired()]),
+    )
+    form_overrides = dict(title_ru=wtforms.StringField, title_en=wtforms.StringField, icon=wtforms.StringField)
 
     def get_query(self):
-        query = super().get_query()
-        return query
+        return super().get_query().order_by(models.ServiceGroup.order)
+
+
+@register('Сервис', 'Сервис', '/admin/service/')
+class AdminServiceView(AdminModelView):
+    __model__ = models.Service
+
+    create_template = 'admin/create.html'
+    edit_template = 'admin/edit.html'
+
+    column_list = ('title_ru', 'title_en')
+    column_labels = dict(title_ru='Заголовок на русском', title_en='Заголовок на английском')
+
+    form_columns = ('title_ru', 'title_en', 'annotation_ru', 'annotation_en', 'group', 'image')
+    form_args = dict(
+        title_ru=dict(label='Русское название', validators=[validators.DataRequired()]),
+        title_en=dict(label='Английское название', validators=[validators.DataRequired()]),
+        annotation_ru=dict(label='Русский текст', validators=[validators.DataRequired()]),
+        annotation_en=dict(label='Английский текст', validators=[validators.DataRequired()]),
+        group=dict(label='Группа', validators=[validators.DataRequired()])
+    )
+    form_overrides = dict(
+        title_ru=wtforms.StringField,
+        title_en=wtforms.StringField,
+        annotation_en=fields.CKTextAreaField,
+        annotation_ru=fields.CKTextAreaField
+    )
+
+    form_extra_fields = dict(
+        image=upload.ImageUploadField(
+            label='Картинка',
+            base_path=config.IMG_PATH,
+            endpoint='image'
+        )
+    )
