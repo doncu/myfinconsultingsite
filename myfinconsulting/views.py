@@ -13,12 +13,14 @@ from myfinconsulting.common import email
 
 @app.route('/', endpoint='index')
 def index_view():
-    return render_template('index.html', alias='index')
+    groups = db.session.query(models.ServiceGroup).order_by(models.ServiceGroup.order).all()
+    return render_template('index.html', alias='index', groups=groups)
 
 
 @app.route('/about/', endpoint='about')
 def about_view():
-    return render_template('about.html', alias='about')
+    persons = db.session.query(models.Employee).all()
+    return render_template('about.html', alias='about', persons=persons)
 
 
 @app.route('/contacts/', methods=['GET', 'POST'], endpoint='contacts')

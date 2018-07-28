@@ -48,20 +48,25 @@ class ServiceGroup(db.Base):
     annotation_ru = sa.Column(sa.Text, nullable=False)
     annotation_en = sa.Column(sa.Text, nullable=False)
 
-    services = orm.relationship('Service', backref='group')
+    services = orm.relationship('Service', backref='group', order_by='Service.order')
 
     title = translation_hybrid(ru=title_ru, en=title_en)
     annotation = translation_hybrid(ru=annotation_ru, en=annotation_en)
+
+    def __str__(self):
+        return self.title_ru
 
 
 class Service(db.Base):
     __tablename__ = 'services'
 
     id = sa.Column(sa.Integer, primary_key=True)
-    title_ru = sa.Column(sa.Text, nullable=False)
-    title_en = sa.Column(sa.Text, nullable=False)
+    title_ru = sa.Column(sa.Text)
+    title_en = sa.Column(sa.Text)
     annotation_ru = sa.Column(sa.Text)
     annotation_en = sa.Column(sa.Text)
+    small_card = sa.Column(sa.Boolean, default=False)
+    order = sa.Column(sa.Integer, unique=True, index=True, nullable=False)
 
     group_id = sa.Column(sa.ForeignKey('service_groups.id'))
 

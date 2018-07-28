@@ -85,37 +85,18 @@
           <br/>
         </div>
       </div>
-
       <div class="row">
-        <div class="col-sm-4 info-blocks">
-          <i class="icon-info-blocks material-icons">account_balance</i>
+        {% for group in groups %}
+             <div class="col-sm-4 info-blocks">
+          <i class="icon-info-blocks material-icons">{{ group.icon }}</i>
           <div class="info-blocks-in">
-            <h3>{{ gettext('Построение/оптимизация системы управления денежными потоками, финансовыми рисками и оборотным капиталом') }}</h3>
-            <p style="text-align: justify">{{ gettext('Изучение
-                            специфики компании, диагностика, разработка индивидуальной модели, план
-                            трансформации и внедрение') }}
-            </p>
+            <h3>{{ group.title }}</h3>
+            <p style="text-align: justify">{{ group.annotation }}</p>
           </div>
         </div>
-        <div class="col-sm-4 info-blocks">
-          <i class="icon-info-blocks material-icons">domain</i>
-          <div class="info-blocks-in">
-            <h3>{{ gettext('Банковские продукты') }}</h3>
-            <p style="text-align: justify">{{ gettext('Независимый от банков консалтинг по банковским продуктам - транзакционные
-                            продукты, продукты финансового рынка, хеджирование, кредитные продукты') }}
-            </p>
-          </div>
-        </div>
-        <div class="col-sm-4 info-blocks">
-          <i class="icon-info-blocks material-icons">speaker_notes</i>
-          <div class="info-blocks-in">
-            <h3>{{ gettext('Обучение персонала') }}</h3>
-            <p style="text-align: justify">{{ gettext('Тренинги по основным функциям казначейства и банковским продуктам') }}
-            </p>
-          </div>
-        </div>
+        {% endfor %}
       </div>
-      <a href="/services/" class="btn btn-primary waves-effect waves-dark center-block"
+      <a href="{{ url_for('services') }}" class="btn btn-primary waves-effect waves-dark center-block"
          style="height: 40px; width: 180px; padding: 9px 12px; margin-bottom: 6%;">{{ gettext('Наши услуги') }}</a>
     </div>
   </section>

@@ -6,7 +6,7 @@ TEMPLATE_PATH = os.path.abspath(os.path.join(BASE_PATH, 'templates'))
 BABEL_TRANSLATION_DIRECTORIES = os.path.join(BASE_PATH, 'translations')
 
 STATIC_PATH = os.path.abspath(os.path.join(ROOT_PATH, 'static'))
-IMG_PATH = os.environ.get('IMG_PATH', os.path.join(BASE_PATH, 'images'))
+IMG_PATH = os.environ.get('IMG_PATH', os.path.join(ROOT_PATH, 'images'))
 DATABASE_URI = 'sqlite:///{}'.format(os.environ.get('DATABASE_URI', os.path.join(ROOT_PATH, 'consulting.db')))
 
 SECRET_KEY = 'adsjdasdasdoasd0as98d0am4m35048m90mcw4fum3h4650439875n4354295132'

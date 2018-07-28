@@ -45,14 +45,14 @@ class TranslationHybrid:
         """
         def getter(obj):
             current_locale = cast_locale(obj, self.current_locale)
-            attr = kwargs[current_locale].key
+            attr = kwargs[current_locale]
             return getattr(obj, attr.key)
         return getter
 
     def setter_factory(self, **kwargs):
         def setter(obj, value):
             locale = cast_locale(obj, self.current_locale)
-            attr = kwargs[locale].key
+            attr = kwargs[locale]
             setattr(obj, attr.key, value)
         return setter
 
