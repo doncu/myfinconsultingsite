@@ -95,7 +95,13 @@ class AdminServiceGroupView(AdminModelView):
         annotation_ru=dict(label='Русский текст', validators=[validators.DataRequired()]),
         annotation_en=dict(label='Английский текст', validators=[validators.DataRequired()]),
     )
-    form_overrides = dict(title_ru=wtforms.StringField, title_en=wtforms.StringField, icon=wtforms.StringField)
+    form_overrides = dict(
+        title_ru=wtforms.StringField,
+        title_en=wtforms.StringField,
+        icon=wtforms.StringField,
+        annotation_en=fields.CKTextAreaField,
+        annotation_ru=fields.CKTextAreaField
+    )
 
     def get_query(self):
         return super().get_query().order_by(models.ServiceGroup.order)
