@@ -1,5 +1,3 @@
-import os
-
 from flask_admin.form import upload
 from flask_admin.contrib import sqla
 
