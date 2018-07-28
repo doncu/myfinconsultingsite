@@ -9,7 +9,7 @@ from myfinconsulting import config
 from myfinconsulting.common import utils
 
 app = Flask(__name__, template_folder=config.TEMPLATE_PATH, static_folder=config.STATIC_PATH)
-app.config.from_object('config')
+app.config.from_object('myfinconsulting.config')
 babel = Babel(app)
 admin = Admin(app, name='admin')
 app.add_template_global(const.MENU, 'MENU')
