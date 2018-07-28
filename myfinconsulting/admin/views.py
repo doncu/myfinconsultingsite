@@ -88,10 +88,12 @@ class AdminServiceGroupView(AdminModelView):
     column_list = ('title_ru', 'title_en', 'order')
     column_labels = dict(title_ru='Заголовок на русском', title_en='Заголовок на английском', order='Порядковый номер')
 
-    form_columns = ('title_ru', 'title_en', 'order', 'icon')
+    form_columns = ('title_ru', 'title_en', 'order', 'icon', 'annotation_ru', 'annotation_en')
     form_args = dict(
         title_ru=dict(label='Русское название', validators=[validators.DataRequired()]),
         title_en=dict(label='Английское название', validators=[validators.DataRequired()]),
+        annotation_ru=dict(label='Русский текст', validators=[validators.DataRequired()]),
+        annotation_en=dict(label='Английский текст', validators=[validators.DataRequired()]),
     )
     form_overrides = dict(title_ru=wtforms.StringField, title_en=wtforms.StringField, icon=wtforms.StringField)
 

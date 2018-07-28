@@ -2,30 +2,24 @@
 
 {% block content %}
 
-    <section id="inner-headline" style="margin-bottom: 2%">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="pageTitle">{{ gettext('ПОЛИТИКА В ОТНОШЕНИИ ОБРАБОТКИ ПЕРСОНАЛЬНЫХ ДАННЫХ')}}</h2>
-                </div>
-            </div>
+  <section id="inner-headline" style="margin-bottom: 2%">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2 class="pageTitle">{{ gettext('ПОЛИТИКА В ОТНОШЕНИИ ОБРАБОТКИ ПЕРСОНАЛЬНЫХ ДАННЫХ') }}</h2>
         </div>
-	</section>
-
-
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-             <div class="testimonials">
-                <div class="active item">
-                  <blockquote>
-                        {{ policy.annotation | safe }}
-                  </blockquote>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
-
-
-
-
+  </section>
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <div class="testimonials">
+        <div class="active item">
+          <blockquote>
+            {{ policy.annotation | safe }}
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </div>
 {% endblock %}

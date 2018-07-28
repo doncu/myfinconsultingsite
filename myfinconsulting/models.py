@@ -45,10 +45,13 @@ class ServiceGroup(db.Base):
     title_ru = sa.Column(sa.Text, nullable=False)
     title_en = sa.Column(sa.Text, nullable=False)
     order = sa.Column(sa.Integer, unique=True, index=True, nullable=False)
+    annotation_ru = sa.Column(sa.Text, nullable=False)
+    annotation_en = sa.Column(sa.Text, nullable=False)
 
     services = orm.relationship('Service', backref='group')
 
     title = translation_hybrid(ru=title_ru, en=title_en)
+    annotation = translation_hybrid(ru=annotation_ru, en=annotation_en)
 
 
 class Service(db.Base):
@@ -57,8 +60,8 @@ class Service(db.Base):
     id = sa.Column(sa.Integer, primary_key=True)
     title_ru = sa.Column(sa.Text, nullable=False)
     title_en = sa.Column(sa.Text, nullable=False)
-    annotation_ru = sa.Column(sa.Text, nullable=False)
-    annotation_en = sa.Column(sa.Text, nullable=False)
+    annotation_ru = sa.Column(sa.Text)
+    annotation_en = sa.Column(sa.Text)
 
     group_id = sa.Column(sa.ForeignKey('service_groups.id'))
 
