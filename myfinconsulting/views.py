@@ -46,7 +46,7 @@ def articles_view():
     return render_template('articles.html', alias='articles', articles=articles)
 
 
-@app.route('/article/<oid>')
+@app.route('/article/<oid>', endpoint='article')
 def article_view(oid):
     article = db.session.query(models.Article).filter(models.Article.id == oid).first()
     return render_template('article.html', alias='article', article=article)
